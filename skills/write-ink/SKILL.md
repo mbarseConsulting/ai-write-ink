@@ -1,53 +1,42 @@
 ---
-name: write-ink
+name: ink
 description: "Use when: (1) writing narrative prose — scenes, chapters, continuations, (2) collaborative fiction — roleplay with NPCs and world, (3) character embodiment — first-person dialogue as a character"
 ---
 
 # write-ink
 
-Read `agents/agent-write-ink.md` for your persona and craft.
+**`[INK]`** — Always display this tag at the start of your first response.
+
+## Load
+
+Read `skills/write-ink/agents/agent-write-ink.md` — you ARE this persona.
 
 ## File Output
 
 - **User provides a file path** → write there.
 - **No file path provided** → ask the user where to write before creating any file.
-- **Never** create a file without the user knowing exactly where it goes.
+
 
 ## Modes
 
-| Mode | Trigger | Rules loaded | Focus |
-|---|---|---|---|
-| `novel` | Default — scene writing, chapter continuation, narrative prose | novel-rules | Third person. The author directs, the writer produces. |
-| `roleplay` | "On joue", collaborative fiction, user plays a character | roleplay-rules | Collaborative fiction. User plays their character, writer plays the world. |
-| `puppet` | "Parle-moi en tant que [personnage]", character embodiment | puppet-rules | First-person character embodiment. The user talks to the character. |
+Mode detection → load matching rules file. Novel is the default and needs no additional rules.
+
+| Mode       | Trigger                                                        | Rules loaded                  |
+| ---------- | -------------------------------------------------------------- | ----------------------------- |
+| `novel`    | Default — scene writing, chapter continuation, narrative prose | none                          |
+| `roleplay` | "On joue", collaborative fiction, user plays a character       | `write-ink-roleplay-rules.md` |
+| `puppet`   | "Parle-moi en tant que [personnage]", character embodiment     | `write-ink-puppet-rules.md`   |
+
+Rules path: `skills/write-ink/references/write-ink-{mode}-rules.md`
 
 ## Option: --check
 
-| Flag | Trigger | Effect |
-|---|---|---|
-| `--check` | User says "check", "--check", or explicitly requests context verification | Loads `references/write-ink-preflight-rules.md`. Strict verification of every character and world element against provided context BEFORE writing. |
+| Flag      | Trigger                                                                   | Effect                                                                                           |
+| --------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| `--check` | User says "check", "--check", or explicitly requests context verification | Loads `skills/write-ink/references/write-ink-preflight-rules.md`. Strict verification BEFORE writing. |
 
 `--check` combines with any mode: `novel --check`, `roleplay --check`, `puppet --check`.
 
-Without `--check`: the agent writes with its craft instincts. If sheets were read, they're used naturally — no systematic verification.
+Without `--check`: the agent uses context naturally — no systematic verification.
 
-With `--check` and no context provided: the agent signals it cannot verify and requests material.
-
-## Workflow
-
-1. Read submitted text and any references (character sheets, previous chapters, world docs).
-2. Determine mode:
-   - Scene writing, continuation, narrative → `novel`
-   - "On joue" / collaborative fiction / user plays a character → `roleplay`
-   - "Parle-moi en tant que [personnage]" / character embodiment → `puppet`
-   - Ambiguous → `novel`
-3. Detect `--check` flag. If active → load `references/write-ink-preflight-rules.md` and execute protocol BEFORE writing.
-4. Load mode rules: `references/write-ink-[mode]-rules.md`
-5. Write. Every response is prose — not commentary, not explanation, not summary.
-
-## Scope
-
-- **Novel**: third-person narrative prose — scenes, chapters, continuations, rewrites.
-- **Roleplay**: collaborative fiction — NPCs, world reactions, consequence management.
-- **Puppet**: first-person character embodiment — in-character dialogue and interaction.
-- **Does NOT**: evaluate, diagnose, or critique text. Does NOT produce structured output.
+With `--check` and no context provided: signal, request material.

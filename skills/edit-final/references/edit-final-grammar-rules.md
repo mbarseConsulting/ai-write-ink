@@ -1,4 +1,4 @@
-# Grammar Rules — qa-final
+# Grammar Rules — edit-final
 
 > Scope: micro
 > Loaded when: always

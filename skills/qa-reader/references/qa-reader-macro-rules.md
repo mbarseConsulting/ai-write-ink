@@ -3,6 +3,7 @@
 > Scope: macro
 > Loaded when: text >= multiple chapters or full manuscript
 > Evaluates: Manuscript-level reading experience — the book as a whole
+> Does NOT evaluate: voice singularity (→ qa-originality:voice-singularity)
 > Preferred output: assessment
 
 ---
@@ -32,14 +33,6 @@
 - **States**: drives forward / stalls / circles / collapses
 - **Suggestion pattern**: If stalls → identify the dead zone and inject a complication. If circles → map the repetitive loop, break it with irreversible change. If collapses → the climax lacks setup — trace what's missing backward.
 
-### singular-voice
-
-- **Assesses**: Whether the prose bears a distinctive authorial fingerprint across the manuscript.
-- **Works**: Open to a random page — you can identify the author. Distinctive rhythm, vocabulary, angle of perception that belongs to THIS writer and no other.
-- **Fails**: The prose is competent but interchangeable. Any skilled writer could have produced these sentences. No personality in the language.
-- **States**: distinctive / competent / generic / absent
-- **Suggestion pattern**: If competent → identify the moments where voice breaks through and amplify. If generic → find the author's natural register in their strongest passage and use it as template. If absent → back to fundamentals — what does this author notice that others don't?
-
 ### thematic-resonance
 
 - **Assesses**: Whether the book is about something beneath the plot. Theme felt, not stated.
@@ -50,8 +43,8 @@
 
 ### global-engagement
 
-- **Assesses**: The ultimate reader verdict — after 50 pages, would you choose to keep reading?
-- **Works**: Not out of duty or professional interest — out of genuine desire to know what happens. The book has earned its reader's time.
-- **Fails**: The reader continues out of obligation. Or puts the book down. The prose is competent but the experience is forgettable.
+- **Assesses**: The ultimate reader verdict — after 50 pages, would you choose to keep reading? Includes identifying dead zones: where does engagement drop, where does the reader consider putting the book down?
+- **Works**: Not out of duty or professional interest — out of genuine desire to know what happens. The book has earned its reader's time. Engagement holds across the full manuscript — no sustained dead zones.
+- **Fails**: The reader continues out of obligation. Or puts the book down. The prose is competent but the experience is forgettable. Specific dead zones identifiable (e.g., "chapters 12-16 sag").
 - **States**: compulsive / willing / dutiful / abandoned
-- **Suggestion pattern**: If dutiful → identify the strongest scene and diagnose why it works when others don't — scale that mechanism. If abandoned → the contract failed — return to opening and rebuild the reader's investment.
+- **Suggestion pattern**: If willing → identify what separates the strongest section from the weakest — scale the mechanism that works. If dutiful → identify the dead zone(s) by chapter/section — diagnose why engagement drops there and what's missing (stakes, character change, information). If abandoned → the contract failed — return to opening and rebuild the reader's investment.

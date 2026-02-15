@@ -22,14 +22,14 @@
 
 ### emotional-truth
 
-- **Detects**: Emotions that feel plot-mandated rather than psychologically earned. Characters feeling what the story needs rather than what their psychology demands. Convenient emotional beats.
-- **Works**: Emotions feel earned, human, and contradictory. Joy and grief coexist. Anger masks fear. The reader recognizes the emotion as true, even if surprising.
-- **Fails**: A character forgives too easily because the plot needs reconciliation. A character is devastated by something they wouldn't care about. The emotional beat serves structure, not character.
-- **Fix pattern**: Root the emotion in character psychology. What would THIS person actually feel in THIS situation, given their history? Allow contradictory feelings.
+- **Detects**: Emotional beats that ring false to the reader. Moments where the reader's gut says "I don't buy it" — emotions that feel convenient, unearned, or disconnected from what the scene built. This axis evaluates the FELT credibility as a reading experience — whether the emotion lands. For the psychological mechanism behind implausible emotions (defense structures, wound-behavior coherence), see qa-characters.
+- **Works**: The reader recognizes the emotion as true, even if surprising. Joy and grief coexist. Anger masks fear. The emotional beat feels earned by what came before in the scene and chapter.
+- **Fails**: The reader feels the author's hand forcing the emotion. A forgiveness that comes too easily. A devastation that seems manufactured. The reader disengages because the emotional beat doesn't land — it serves the plot, not the experience.
+- **Fix pattern**: Identify what the scene built emotionally and whether the beat follows from that build. If the emotion jumps ahead of what the reader experienced, add the missing steps. If it contradicts the scene's emotional trajectory, realign.
 - **Example**:
   > "Malgré tout ce qu'il lui avait fait, elle lui pardonna instantanément."
-  > → Émotion au service du plot — le pardon n'est pas gagné
-  > → Montrer la résistance, le conflit intérieur, avant tout basculement
+  > → Émotion qui ne passe pas — le lecteur n'y croit pas, le pardon n'est pas gagné par la scène
+  > → Montrer la résistance, le conflit intérieur — le lecteur doit SENTIR le basculement
 
 ### information-reveal
 

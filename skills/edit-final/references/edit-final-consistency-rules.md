@@ -1,4 +1,4 @@
-# Consistency Rules — qa-final
+# Consistency Rules — edit-final
 
 > Scope: meso
 > Loaded when: text >= 2 scenes or submitted with reference material

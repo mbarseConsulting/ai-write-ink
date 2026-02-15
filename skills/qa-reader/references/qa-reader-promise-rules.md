@@ -45,8 +45,8 @@ Requires both beginning and end to evaluate.
 
 ### arc-completion
 
-- **Assesses**: Whether all major character and plot arcs reach a satisfying state.
-- **Works**: Every arc is resolved, evolved, or deliberately left open. Not abandoned. Not forgotten. Every thread the reader tracked is acknowledged.
+- **Assesses**: Whether all major character and plot arcs reach a satisfying state for the reader. Not whether the character has psychologically transformed (→ qa-characters:arc-completion), but whether the reader feels the arcs are resolved, evolved, or deliberately left open.
+- **Works**: Every arc is resolved, evolved, or deliberately left open. Not abandoned. Not forgotten. Every thread the reader tracked is acknowledged. The reader closes the book without unfinished business (unless that's the point).
 - **Fails**: A character arc that was central for 200 pages is never resolved. A plot thread established in act 1 vanishes. The reader tracked something the author forgot.
 - **States**: complete / mostly / threads abandoned
 - **Suggestion pattern**: If mostly → list the incomplete threads and determine: resolve, or acknowledge the openness deliberately. If threads abandoned → either cut the setup or add the payoff.

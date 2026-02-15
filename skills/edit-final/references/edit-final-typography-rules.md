@@ -1,4 +1,4 @@
-# Typography Rules — qa-final
+# Typography Rules — edit-final
 
 > Scope: micro
 > Loaded when: always
@@ -20,6 +20,17 @@
   > "« Je pars demain. » Il se leva. — Et moi ? dit-elle."
   > → Typographie : mélange guillemets et tirets dans le même dialogue
   > → Harmoniser : tout en tirets cadratins (convention par défaut)
+
+### dialogue-format
+
+- **Detects**: Dialogue lines not wrapped in markdown blockquote syntax. Tiret cadratin lines appearing as plain text instead of `> —`.
+- **Works**: Every dialogue line (starting with tiret cadratin) is wrapped in a blockquote (`> —`). Consistent throughout.
+- **Fails**: Some dialogue lines use `> —` and others are plain `— text`. Or dialogue is never in blockquotes.
+- **Fix pattern**: Wrap all dialogue lines in blockquote syntax. Narration stays as plain paragraphs.
+- **Example**:
+  > `— Je pars demain.`
+  > → Format : dialogue sans blockquote
+  > → `> — Je pars demain.`
 
 ### french-spacing
 

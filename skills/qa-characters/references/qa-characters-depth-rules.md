@@ -3,7 +3,7 @@
 > Scope: character
 > Loaded when: character sheet provided, or text with sufficient character presence
 > Evaluates: Individual character psychology — one character at a time
-> Does NOT evaluate: character arc over time, relationships
+> Does NOT evaluate: character arc over time (→ evolution-rules), relationships (→ dynamics-rules), narrative POV technique (→ qa-prose:pov-discipline), POV strategy (→ qa-reader:pov-strategy)
 > Preferred output: assessment
 
 ---
@@ -42,6 +42,17 @@
   > "Il analysa la situation avec lucidité : trois options s'offraient à lui, chacune comportant des risques spécifiques qu'il évalua méthodiquement."
   > → Monologue trop structuré pour un personnage en danger — pas crédible
   > → Fragmenter : pensées rapides, contradictoires, sensorielles
+
+### pov-knowledge
+
+- **Detects**: Characters knowing, reacting to, or thinking about information they haven't acquired through their own experience in the story. Includes information from other POV scenes, from the author's outline, or from future events. Also includes emotional knowledge — "sensing" another's feelings without established intimacy or behavioral cues.
+- **Works**: The character's knowledge, reactions, and thoughts are strictly bounded by what they've witnessed, been told, or logically inferred. Emotional reads of others are grounded in observable behavior or established relationship patterns.
+- **Fails**: A character reacts to a secret revealed in another POV scene. A character "senses" grief in someone they barely know, with no behavioral cues. A character makes a decision based on information the author knows but the character hasn't acquired.
+- **Fix pattern**: Trace the information backward — where did the character learn this? If no acquisition path exists, remove the knowledge or add the missing scene/dialogue that provides it.
+- **Example**:
+  > "Elle sentit qu'il cachait quelque chose à propos de la lettre." (la lettre a été mentionnée uniquement dans un chapitre POV d'un autre personnage)
+  > → Connaissance inaccessible — le personnage ne peut pas savoir pour la lettre
+  > → Soit ajouter un moment où elle l'apprend, soit retirer la référence
 
 ---
 

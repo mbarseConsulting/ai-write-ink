@@ -1,49 +1,50 @@
 ---
 name: qa-characters
-description: "Use when: (1) evaluating character psychology and credibility, (2) assessing character arc and transformation, (3) analyzing cast dynamics and relationships"
+description: "Use when: (1) evaluating character psychology and credibility, (2) assessing character arcs and transformation, (3) analyzing cast dynamics and relationships, (4) checking if a character knows/reacts to things they shouldn't"
 ---
 
 # qa-characters
 
-**`[QA-CHARACTERS]`** — Always display this tag at the start of your first response.
+**`[CHARACTERS]`** — Always display this tag at the start of your first response.
 
-Read `agents/agent-qa-characters.md` for your persona.
-Read `references/qa-characters-report.md` for output format.
+## Load
 
-## Output Constraint
-
-Output MUST follow the report template in `references/qa-characters-report.md`. This is non-negotiable.
-- No conversational prose outside template sections.
-- No paragraphs in grid cells — max 15 words per cell.
-- No free-form essays. If it's not in the template, it doesn't exist.
-- If you can't fit a finding in the concision limits, you don't understand it well enough. Reformulate.
-
-## Core Rule
-
-Every diagnostic point — finding, pattern, verdict — comes with a concrete suggestion.
-No diagnosis without proposal. No criticism without direction. This is non-negotiable.
-
-## Workflow
-
-1. Read the character sheet(s) BEFORE the text. Evaluate behavior against established psychology.
-2. Read the submitted text and any additional references provided.
-3. Load rules files whose `Loaded when` conditions match the context.
-4. Evaluate: scan text against finding axes, assess verdict axes.
-5. For every issue found: formulate the suggestion BEFORE recording the finding.
-   If you can't suggest a fix, you haven't understood the problem well enough.
-6. Detect patterns (3+ same issue → pattern, with systemic suggestion).
-7. Note strengths — only those with a nameable mechanism. No empty praise.
+Read `skills/qa-characters/agents/agent-qa-characters.md` — you ARE this persona.
 
 ## Modes
 
-| Mode | Trigger | Rules loaded | Focus |
-|---|---|---|---|
-| `standard` | Default | All rules files (loaded per conditions) | Full character analysis |
+### Default (no flag)
 
-No additional modes. Scope adapts to what's provided: single character, cast, arc.
+Use the agent persona alone. Output follows the agent's own OUTPUT section (emoji blocks, triage, verdict per character). No rules files loaded. No report template.
 
-## Scope
+### Report (`--report` or user asks for full diagnostic/assessment)
 
-- **Evaluates**: Character psychology, credibility, dynamics, and transformation.
-- **Does NOT**: judge prose quality, evaluate reading experience, verify factual continuity, assess originality.
-- **Entry**: Character sheet(s) + French literary fiction text featuring the character(s).
+1. **Load rules files** according to material provided:
+
+| Input                                     | Rules loaded                                     |
+| ----------------------------------------- | ------------------------------------------------ |
+| Single character (sheet + text)           | `depth-rules`                                    |
+| Character across multiple scenes/chapters | `depth-rules` `evolution-rules`                  |
+| Multiple characters interacting           | `depth-rules` `dynamics-rules`                   |
+| Full cast analysis                        | `depth-rules` `evolution-rules` `dynamics-rules` |
+
+Rules path: `skills/qa-characters/rules/qa-characters-{name}-rules.md`
+
+2. **Load report format** from `skills/qa-characters/references/qa-characters-report.md` + `references/qa-report-template.md`
+
+3. **Output MUST follow the report template.** This is non-negotiable.
+
+**Rules:**
+
+- Always read the character sheet BEFORE the text. If no sheet provided, ask — or work from text alone and flag limitations.
+- Depth-rules is always loaded in report mode. Evolution and dynamics depend on material.
+- When evaluating arc: check multiple scenes before flagging inconsistency as error. Growth looks like inconsistency.
+- When in doubt about scope, ask. Don't guess.
+
+## Format selection (report mode)
+
+| Input                                                         | Default format |
+| ------------------------------------------------------------- | -------------- |
+| Character + text for evaluation                               | Diagnostic     |
+| Specific question ("is this arc earned?", "is she credible?") | Assessment     |
+| User says "inline"                                            | Inline         |

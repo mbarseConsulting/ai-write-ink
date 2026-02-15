@@ -74,3 +74,25 @@
   > (Three consecutive fight/chase sequences with no downbeat)
   > → Rythme — trois scènes haute tension consécutives, épuisement lecteur
   > → Insérer un temps de respiration entre deux scènes d'intensité
+
+### pov-strategy
+
+- **Detects**: POV choices that undermine the reading experience. Not technical violations like head-hopping (→ qa-prose:pov-discipline), but strategic choices: wrong POV character for this scene, narrative distance that doesn't serve the emotional need, POV shifts between scenes that disorient without purpose.
+- **Works**: The POV character is the one with the most at stake. The narrative distance (close/distant) matches the emotional intensity needed. POV shifts between scenes are motivated and the reader reorients quickly.
+- **Fails**: A scene is told from the bystander's POV when the protagonist is the one making the choice. The narrative distance stays distant during the emotional climax — the reader can't feel what the character feels. POV switches mid-chapter without earning the shift.
+- **Fix pattern**: Identify whose scene this is — who has the most to lose? Tell it from their eyes. Adjust narrative distance to match the emotional register: close for intimacy, distant for scope. If shifting POV, earn the transition.
+- **Example**:
+  > (Climactic confrontation told from a secondary character watching from across the room)
+  > → POV mal choisi — le lecteur est à distance de l'enjeu central
+  > → Raconter depuis le personnage qui a le plus à perdre dans cette scène
+
+### temporal-effect
+
+- **Detects**: Temporal structure choices that weaken engagement. Flashbacks that kill momentum, non-linear chronology that doesn't earn its complexity, analepses that arrive too late (the reader already guessed), or time jumps that skip the interesting part. Not factual timeline errors (→ qa-consistency:timeline), but the EFFECT of temporal choices on the reading experience.
+- **Works**: Flashbacks arrive when the reader needs them — not when the author wants to explain. Non-linear structure creates a mystery the reader wants to solve. Time jumps land on the interesting side. Every temporal departure earns its return by creating tension, irony, or understanding.
+- **Fails**: A flashback interrupts a tense scene — momentum dies, the reader wants to get back. Non-linear chronology creates confusion without mystery. A time jump skips the confrontation and shows the aftermath — the reader feels cheated.
+- **Fix pattern**: For flashbacks: does the reader need this NOW, or does the author? If the author, move it. For non-linear: does the structure create questions or confusion? If confusion, linearize or add anchoring. For time jumps: are you skipping the boring part (good) or the interesting part (bad)?
+- **Example**:
+  > (Flashback to childhood inserted between the moment a character draws a gun and the outcome)
+  > → Flashback qui casse le momentum — le lecteur veut savoir ce qui se passe, pas pourquoi
+  > → Déplacer le flashback avant la confrontation, ou après la résolution

@@ -2,7 +2,7 @@
 
 > Scope: micro
 > Loaded when: always
-> Evaluates: Sentence and paragraph level engagement — the reader's moment-to-moment experience
+> Evaluates: Paragraph and passage level engagement — the reader's moment-to-moment experience
 > Preferred output: inline
 
 ---
@@ -20,27 +20,16 @@
   > → Ouverture météo — aucune question, aucune tension, aucune voix
   > → Entrer par un geste, un détail étrange, ou une pensée qui accroche
 
-### sentence-rhythm
-
-- **Detects**: Monotone sentence length and structure. No variation between short and long. No fragments after complex sentences. Rhythm disconnected from content.
-- **Works**: Short after long. Fragment after complex. Fast sentences for action, long for interiority, fragments for shock. The rhythm serves the content and keeps the reader's ear engaged.
-- **Fails**: Five consecutive sentences of the same length. Action described in long, complex sentences. Introspection in choppy fragments. Rhythm works against content.
-- **Fix pattern**: Map rhythm to content — shorten for speed, lengthen for depth, fragment for impact. Break the monotone.
-- **Example**:
-  > "Il courut dans le couloir qui menait à la salle principale où se trouvait la sortie de secours qu'il cherchait depuis le début."
-  > → Phrase longue pour une action rapide — le rythme freine la scène
-  > → Découper : phrases courtes, haletantes, qui miment la course
-
 ### density
 
-- **Detects**: Filler sentences, throat-clearing paragraphs, sentences that repeat what the previous one said in different words. Content that can be removed without loss.
-- **Works**: Every sentence earns its place. Each one advances the scene, deepens a character, or creates texture. Nothing redundant.
-- **Fails**: A sentence restates the previous one. A paragraph establishes something already clear. Remove a sentence — nothing changes. That sentence shouldn't exist.
-- **Fix pattern**: Cut. If the sentence adds nothing, delete it. If it adds something but weakly, merge with a stronger neighbor.
+- **Detects**: Passages, paragraphs, or sequences that can be removed without loss to the reading experience. Throat-clearing openings, redundant transitions, scenes that restate what's already established. Evaluated at passage and scene level — not sentence level (sentence redundancy → qa-prose:over-explanation).
+- **Works**: Every passage earns its place. Each paragraph advances the scene, deepens a character, or creates texture the reader needs. Nothing redundant at the structural level.
+- **Fails**: A full paragraph establishes something already clear from the previous scene. A transition restates what the reader already knows. A descriptive passage adds atmosphere already conveyed. Remove the passage — nothing changes. It shouldn't exist.
+- **Fix pattern**: Cut the passage or merge its essential information into a stronger neighbor. If a scene repeats a beat from a previous scene, one of them goes.
 - **Example**:
-  > "Le silence s'installa. Personne ne parlait. Un calme pesant régnait dans la pièce."
-  > → Trois phrases pour une seule information — deux de trop
-  > → Garder la plus physique, couper les deux autres
+  > (A full paragraph recapping the argument from the previous scene before the new scene begins)
+  > → Passage redondant — le lecteur sait déjà, la scène précédente l'a montré
+  > → Couper la récapitulation, entrer directement dans le nouveau beat
 
 ### sensory-clarity
 
@@ -56,21 +45,10 @@
 ### dialogue-effect
 
 - **Detects**: Dialogue without subtext. Characters saying exactly what they mean. No gap between words and intentions. Dialogue that only exchanges information.
-- **Works**: Characters say one thing, mean another. Tension in the gap between words and intentions. Distinct voices. Dialogue advances the scene AND reveals character. This axis judges the EFFECT on the reader, not the technical format.
+- **Works**: Characters say one thing, mean another. Tension in the gap between words and intentions. Distinct voices. Dialogue advances the scene AND reveals character. This axis judges the EFFECT on the reader, not the technical format (dialogue craft → qa-prose:dialogue-craft).
 - **Fails**: Characters explain their feelings in dialogue. Two characters agree without friction. Every line delivers information with no undertow. The reader learns but doesn't feel.
 - **Fix pattern**: Add what's unsaid. Give one character a hidden agenda. Make the surface conversation about one thing and the real conversation about another.
 - **Example**:
   > "— Je suis en colère contre toi. — Je sais, et je suis désolé."
   > → Dialogue frontal — aucun sous-texte, rien entre les lignes
   > → Faire passer la colère par un sujet détourné, un refus, un silence
-
-### word-precision
-
-- **Detects**: Generic placeholders ("chose", "sentiment", "quelque chose"), approximate words where a specific word exists, adjective/adverb clutter where a precise noun/verb would suffice.
-- **Works**: Specific, earned words. Each noun and verb carries weight. Adjectives only when they add what the noun alone can't. The right word, not the approximate word.
-- **Fails**: "Il ressentit quelque chose" — what? "Un sentiment étrange" — which one? The text gestures toward meaning instead of nailing it.
-- **Fix pattern**: Replace the generic with the specific. Name the thing. Find the verb that carries the meaning without an adverb. Kill the placeholder.
-- **Example**:
-  > "Il y avait quelque chose de bizarre dans son attitude."
-  > → "Quelque chose de bizarre" — doublement vague, aucune précision
-  > → Nommer : quel geste, quelle posture, quel décalage exactement

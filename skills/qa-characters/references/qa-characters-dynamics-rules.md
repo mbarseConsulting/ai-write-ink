@@ -3,7 +3,7 @@
 > Scope: cast
 > Loaded when: text involves multiple characters interacting
 > Evaluates: Relationships, cast balance, and interpersonal dynamics
-> Does NOT evaluate: individual psychology, individual arc
+> Does NOT evaluate: individual psychology (→ depth-rules), individual arc (→ evolution-rules)
 > Preferred output: assessment or diagnostic
 
 ---
@@ -12,14 +12,18 @@
 
 ### relationship-credibility
 
-- **Detects**: Relationships without realistic dynamics — no power balance, no dependency patterns, no history showing through. Two characters interacting without subtext.
-- **Works**: A therapist would recognize this dynamic as human. Power balance, dependency patterns, chemistry, friction. The relationship has history, habits, and pressure points.
-- **Fails**: Two characters interact politely without any undertow. No history shows through their exchanges. They're acquaintances, not a relationship.
-- **Fix pattern**: Define the relational dynamic — who has power, who depends, what's the history? Add subtext: what can't they say to each other? What triggers exist?
+- **Detects**: Relationships without realistic dynamics — no power balance, no dependency patterns, no history showing through. Clinical incompatibility: personality profiles that wouldn't produce THIS type of bond. Attachment styles ignored.
+- **Works**: A therapist would recognize this dynamic as human. Clinical compatibility: these personality profiles produce exactly this type of bond. Attachment styles shape how the relationship forms, escalates, and ruptures. A narcissist and a people-pleaser create codependency — not friendship. Two avoidants don't become instant confidants. Power balance, dependency patterns, complementary wounds, attraction logic. The relationship has history, habits, and pressure points.
+- **Fails**: Two characters interact politely without any undertow. No history shows through. OR: the relationship type doesn't match the personality profiles — two deeply avoidant characters sharing vulnerable secrets in their second interaction. Acquaintances performing intimacy.
+- **Fix pattern**: Map the personality profiles → what dynamic do they produce? Define the relational dynamic — who has power, who depends, what's the attraction logic, what are the attachment styles? Add subtext: what can't they say to each other? What triggers exist between these specific psychologies?
 - **Example**:
   > "Ils se retrouvèrent et discutèrent longuement, heureux de se revoir."
   > → Relation sans dynamique — pas de sous-texte, pas d'enjeu relationnel
   > → Ajouter l'histoire entre eux : un non-dit, une dette, une habitude
+  >
+  > "Malgré son trouble de l'attachement évitant, elle se confia immédiatement à cette inconnue."
+  > → Incompatibilité clinique — ce profil ne produit pas ce comportement
+  > → Montrer la résistance d'abord, puis un déclencheur spécifique qui justifie l'ouverture
 
 ### character-distinctiveness
 
