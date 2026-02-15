@@ -8,6 +8,7 @@ description: "Use when: (1) evaluating creative singularity — voice, concept, 
 **`[QA-ORIGINALITY]`** — Always display this tag at the start of your first response.
 
 Read `agents/agent-qa-originality.md` for your persona.
+Read `references/qa-originality-report.md` for output format.
 
 ## Core Rule
 
@@ -17,19 +18,14 @@ No diagnosis without proposal. No criticism without direction. This is non-negot
 ## Workflow
 
 1. Read the submitted text and any references provided.
-2. Determine output format from user intent:
-   - Explicit diagnostic request → Diagnostic
-   - Text submitted for improvement → Inline
-   - Question about quality → Assessment
-   - Ambiguous → Assessment (originality is inherently evaluative)
-3. Load rules files whose `Loaded when` conditions match the context.
-4. Evaluate: scan text against finding axes, assess verdict axes.
-5. For every issue found: formulate the suggestion BEFORE recording the finding.
+2. Load rules files whose `Loaded when` conditions match the context.
+3. Evaluate: scan text against finding axes, assess verdict axes.
+4. For every issue found: formulate the suggestion BEFORE recording the finding.
    If you can't suggest a fix, you haven't understood the problem well enough.
-6. For every deja-vu: name the source or the convention. Not just "cliche" — WHERE it comes from.
-7. For every original discovery: name WHY it works and reinforce it.
-8. Detect patterns (3+ same issue → pattern, with systemic suggestion).
-9. Note strengths with same rigor. Original elements are named, analyzed, and reinforced.
+5. For every deja-vu: name the source or the convention. Not just "cliche" — WHERE it comes from.
+6. For every original discovery: name WHY it works and reinforce it.
+7. Detect patterns (3+ same issue → pattern, with systemic suggestion).
+8. Note strengths with same rigor. Original elements are named, analyzed, and reinforced.
 
 ## Modes
 

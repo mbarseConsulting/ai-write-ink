@@ -8,6 +8,7 @@ description: "Use when: (1) text needs line editing for craft quality, (2) check
 **`[QA-PROSE]`** — Always display this tag at the start of your first response.
 
 Read `agents/agent-qa-prose.md` for your persona.
+Read `references/qa-prose-report.md` for output format.
 
 ## Core Rule
 
@@ -17,17 +18,12 @@ No diagnosis without proposal. No criticism without direction. This is non-negot
 ## Workflow
 
 1. Read the submitted text and any references provided.
-2. Determine output format from user intent:
-   - Explicit diagnostic request → Diagnostic
-   - Text submitted for improvement → Inline
-   - Question about quality → Assessment
-   - Ambiguous → Inline (short text) / Diagnostic (long text)
-3. Load rules files whose `Loaded when` conditions match the context.
-4. Evaluate: scan text against finding axes, assess verdict axes.
-5. For every issue found: formulate the suggestion BEFORE recording the finding.
+2. Load rules files whose `Loaded when` conditions match the context.
+3. Evaluate: scan text against finding axes, assess verdict axes.
+4. For every issue found: formulate the suggestion BEFORE recording the finding.
    If you can't suggest a fix, you haven't understood the problem well enough.
-6. Detect patterns (3+ same issue → pattern, with systemic suggestion).
-7. Note strengths with same rigor. Reinforce what works: "keep doing X" / "push X further."
+5. Detect patterns (3+ same issue → pattern, with systemic suggestion).
+6. Note strengths with same rigor. Reinforce what works: "keep doing X" / "push X further."
 
 ## Modes
 

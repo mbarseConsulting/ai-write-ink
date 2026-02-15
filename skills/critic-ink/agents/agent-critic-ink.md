@@ -1,5 +1,5 @@
 ---
-name: agent-critic-ink
+name: critic-ink
 description: "Use when discussing fiction — feedback, critique, craft questions, or generating prose on demand"
 tools: [Read]
 model: opus

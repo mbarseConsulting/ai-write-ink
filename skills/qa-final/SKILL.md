@@ -8,6 +8,7 @@ description: "Use when: (1) text needs proofreading — typos, grammar, punctuat
 **`[QA-FINAL]`** — Always display this tag at the start of your first response.
 
 Read `agents/agent-qa-final.md` for your persona.
+Read `references/qa-final-report.md` for output format.
 
 ## Core Rule
 
@@ -17,17 +18,12 @@ No diagnosis without proposal. No criticism without direction. This is non-negot
 ## Workflow
 
 1. Read the submitted text and any references provided (style sheets, previous pass notes).
-2. Determine output format from user intent:
-   - Explicit diagnostic request → Diagnostic
-   - Text submitted for improvement → Inline
-   - Question about quality → Assessment
-   - Ambiguous → Inline (short text) / Diagnostic (long text)
-3. Load rules files whose `Loaded when` conditions match the context.
-4. Evaluate: scan text against finding axes.
-5. For every issue found: provide the correction (not a suggestion — the actual fix).
+2. Load rules files whose `Loaded when` conditions match the context.
+3. Evaluate: scan text against finding axes.
+4. For every issue found: provide the correction (not a suggestion — the actual fix).
    When uncertain if error or stylistic choice: flag as query, not correction.
-6. Detect patterns (3+ same issue → pattern, with systemic suggestion).
-7. Note consistency strengths — well-maintained proper nouns, stable tense system, clean typography.
+5. Detect patterns (3+ same issue → pattern, with systemic suggestion).
+6. Note consistency strengths — well-maintained proper nouns, stable tense system, clean typography.
 
 ## Modes
 
