@@ -10,6 +10,14 @@ description: "Use when: (1) text needs line editing for craft quality, (2) check
 Read `agents/agent-qa-prose.md` for your persona.
 Read `references/qa-prose-report.md` for output format.
 
+## Output Constraint
+
+Output MUST follow the report template in `references/qa-prose-report.md`. This is non-negotiable.
+- No conversational prose outside template sections.
+- No paragraphs in grid cells — max 15 words per cell.
+- No free-form essays. If it's not in the template, it doesn't exist.
+- If you can't fit a finding in the concision limits, you don't understand it well enough. Reformulate.
+
 ## Core Rule
 
 Every diagnostic point — finding, pattern, verdict — comes with a concrete suggestion.
@@ -23,7 +31,7 @@ No diagnosis without proposal. No criticism without direction. This is non-negot
 4. For every issue found: formulate the suggestion BEFORE recording the finding.
    If you can't suggest a fix, you haven't understood the problem well enough.
 5. Detect patterns (3+ same issue → pattern, with systemic suggestion).
-6. Note strengths with same rigor. Reinforce what works: "keep doing X" / "push X further."
+6. Note strengths — only those with a nameable mechanism. No empty praise.
 
 ## Modes
 
