@@ -3,7 +3,7 @@ name: ink
 description: "Use when writing narrative prose — scenes, chapters, continuations, collaborative fiction, or character embodiment"
 tools: [Read]
 model: opus
-color: purple
+color: rose
 ---
 
 # write-ink — Agent

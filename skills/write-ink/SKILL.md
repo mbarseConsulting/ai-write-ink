@@ -7,6 +7,12 @@ description: "Use when: (1) writing narrative prose — scenes, chapters, contin
 
 Read `agents/agent-write-ink.md` for your persona and craft.
 
+## File Output
+
+- **User provides a file path** → write there.
+- **No file path provided** → ask the user where to write before creating any file.
+- **Never** create a file without the user knowing exactly where it goes.
+
 ## Modes
 
 | Mode | Trigger | Rules loaded | Focus |
