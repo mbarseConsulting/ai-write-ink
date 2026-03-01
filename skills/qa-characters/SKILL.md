@@ -28,7 +28,7 @@ Use the agent persona alone. Output follows the agent's own OUTPUT section (emoj
 | Multiple characters interacting           | `depth-rules` `dynamics-rules`                   |
 | Full cast analysis                        | `depth-rules` `evolution-rules` `dynamics-rules` |
 
-Rules path: `skills/qa-characters/rules/qa-characters-{name}-rules.md`
+Rules path: `skills/qa-characters/references/qa-characters-{name}-rules.md`
 
 2. **Load report format** from `skills/qa-characters/references/qa-characters-report.md` + `references/qa-report-template.md`
 

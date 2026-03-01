@@ -27,7 +27,7 @@ Use the agent persona alone. Output follows the agent's own OUTPUT section (emoj
 | Complete scene or chapter      | `micro-rules` `meso-rules`               |
 | Multiple chapters / manuscript | `micro-rules` `meso-rules` `macro-rules` |
 
-Rules path: `skills/qa-originality/rules/qa-originality-{name}-rules.md`
+Rules path: `skills/qa-originality/references/qa-originality-{name}-rules.md`
 
 2. **Load report format** from `skills/qa-originality/references/qa-originality-report.md` + `references/qa-report-template.md`
 

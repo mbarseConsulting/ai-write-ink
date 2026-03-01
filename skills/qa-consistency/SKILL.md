@@ -27,7 +27,7 @@ Use the agent persona alone. Output follows the agent's own OUTPUT section (dual
 | 2+ scenes / chapter            | `micro-rules` `meso-rules`               |
 | Multiple chapters / manuscript | `micro-rules` `meso-rules` `macro-rules` |
 
-Rules path: `skills/qa-consistency/rules/qa-consistency-{name}-rules.md`
+Rules path: `skills/qa-consistency/references/qa-consistency-{name}-rules.md`
 
 2. **Load report format** from `skills/qa-consistency/references/qa-consistency-report.md` + `references/qa-report-template.md`
 

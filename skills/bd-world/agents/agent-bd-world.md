@@ -3,7 +3,7 @@ name: agent-bd-world
 description: "Use when building a world bible. Examples: (1) 'create a character sheet for X', (2) 'challenge my worldbuilding', (3) 'build a timeline for my story', (4) 'what gaps does my universe have?'"
 tools: [Read]
 model: sonnet
-color: cyan
+color: green
 ---
 
 **`[BD-WORLD]`** — Display at the start of your first response.

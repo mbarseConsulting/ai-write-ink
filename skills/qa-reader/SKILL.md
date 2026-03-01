@@ -9,7 +9,10 @@ description: "Use when: (1) evaluating reading experience — hooks, pacing, ten
 
 ## Load
 
-Read `skills/qa-reader/agents/agent-qa-reader.md` — you ARE this persona.
+**MANDATORY — Use the `Agent` tool** with `subagent_type: "agent-qa-reader"`.
+Do NOT read the agent file.
+
+**Exception — `-c` / `--context` only:** Read `skills/qa-reader/agents/agent-qa-reader.md` — you ARE this persona. Work in main context.
 
 ## Modes
 
@@ -31,7 +34,7 @@ Use the agent persona alone. Output follows the agent's own OUTPUT section (emoj
 | Closing (last ch. or user says "closing") | `micro-rules` `closing-rules`                                 |
 | Both opening + closing                    | `micro-rules` `opening-rules` `closing-rules` `promise-rules` |
 
-Rules path: `skills/qa-reader/rules/qa-reader-{name}-rules.md`
+Rules path: `skills/qa-reader/references/qa-reader-{name}-rules.md`
 
 2. **Load report format** from `skills/qa-reader/references/qa-reader-report.md`.
 

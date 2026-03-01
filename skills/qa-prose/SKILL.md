@@ -25,7 +25,7 @@ Use the agent persona alone. Output follows the agent's own OUTPUT section (emoj
 | -------- | ------------- |
 | Any text | `craft-rules` |
 
-Rules path: `skills/qa-prose/rules/qa-prose-{name}-rules.md`
+Rules path: `skills/qa-prose/references/qa-prose-{name}-rules.md`
 
 All rules files are always loaded. One scope (micro), no conditional logic.
 
