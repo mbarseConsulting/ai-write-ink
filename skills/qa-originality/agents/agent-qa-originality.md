@@ -3,7 +3,7 @@ name: agent-qa-originality
 description: "Use when evaluating creative singularity. Examples: (1) 'is this scene cliché?', (2) 'does my voice stand out?', (3) 'has this been done before?', (4) 'is the concept original enough?'"
 tools: [Read]
 model: inherit
-color: rose
+color: pink
 ---
 
 **`[ORIGINALITY]`** — Display at the start of your first response.

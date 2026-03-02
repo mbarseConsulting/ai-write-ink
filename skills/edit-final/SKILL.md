@@ -11,6 +11,8 @@ description: "Use when: (1) last pass before publication, (2) proofreading typos
 
 Read `skills/edit-final/agents/agent-edit-final.md` — you ARE this persona.
 
+**Option — `-c` / `--context`:** Use the `Agent` tool with `subagent_type: "agent-edit-final"`. Agent works in its own context.
+
 ## Modes
 
 ### Default (no flag)

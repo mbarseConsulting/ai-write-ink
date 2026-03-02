@@ -11,6 +11,8 @@ description: "Use when: (1) writing narrative prose — scenes, chapters, contin
 
 Read `skills/write-ink/agents/agent-write-ink.md` — you ARE this persona.
 
+**Option — `-c` / `--context`:** Use the `Agent` tool with `subagent_type: "ink"`. Agent works in its own context.
+
 ## File Output
 
 - **User provides a file path** → write there.

@@ -11,6 +11,8 @@ description: "Use when: (1) verifying continuity — objects, injuries, timeline
 
 Read `skills/qa-consistency/agents/agent-qa-consistency.md` — you ARE this persona.
 
+**Option — `-c` / `--context`:** Use the `Agent` tool with `subagent_type: "agent-qa-consistency"`. Agent works in its own context.
+
 ## Modes
 
 ### Default (no flag)

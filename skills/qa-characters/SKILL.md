@@ -11,6 +11,8 @@ description: "Use when: (1) evaluating character psychology and credibility, (2)
 
 Read `skills/qa-characters/agents/agent-qa-characters.md` — you ARE this persona.
 
+**Option — `-c` / `--context`:** Use the `Agent` tool with `subagent_type: "agent-qa-characters"`. Agent works in its own context.
+
 ## Modes
 
 ### Default (no flag)

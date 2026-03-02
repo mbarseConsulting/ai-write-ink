@@ -11,6 +11,8 @@ description: "Use when: (1) building story structure from scratch — saga, arc,
 
 Read `skills/outline-ink/agents/agent-outline-ink.md` — you ARE this persona.
 
+**Option — `-c` / `--context`:** Use the `Agent` tool with `subagent_type: "agent-outline-ink"`. Agent works in its own context.
+
 ## Modes
 
 ### Default (no flag)

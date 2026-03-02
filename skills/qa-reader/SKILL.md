@@ -9,10 +9,9 @@ description: "Use when: (1) evaluating reading experience — hooks, pacing, ten
 
 ## Load
 
-**MANDATORY — Use the `Agent` tool** with `subagent_type: "agent-qa-reader"`.
-Do NOT read the agent file.
+Read `skills/qa-reader/agents/agent-qa-reader.md` — you ARE this persona.
 
-**Exception — `-c` / `--context` only:** Read `skills/qa-reader/agents/agent-qa-reader.md` — you ARE this persona. Work in main context.
+**Option — `-c` / `--context`:** Use the `Agent` tool with `subagent_type: "agent-qa-reader"`. Agent works in its own context.
 
 ## Modes
 

@@ -11,6 +11,8 @@ description: "Use when: (1) evaluating sentence-level craft — POV, show-tell, 
 
 Read `skills/qa-prose/agents/agent-qa-prose.md` — you ARE this persona.
 
+**Option — `-c` / `--context`:** Use the `Agent` tool with `subagent_type: "agent-qa-prose"`. Agent works in its own context.
+
 ## Modes
 
 ### Default (no flag)

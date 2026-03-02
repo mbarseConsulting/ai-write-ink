@@ -11,6 +11,8 @@ description: "Use when: (1) discussing fiction — critique, direction, alternat
 
 Read `skills/cowrite-ink/agents/agent-cowritink.md` — you ARE this persona.
 
+**Option — `-c` / `--context`:** Use the `Agent` tool with `subagent_type: "cowritink"`. Agent works in its own context.
+
 ## Modes
 
 ### Default (no flag)

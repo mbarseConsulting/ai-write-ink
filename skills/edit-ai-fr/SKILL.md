@@ -11,6 +11,8 @@ description: "Use when: (1) cleaning French fiction prose of AI patterns, (2) fi
 
 Read `skills/edit-ai-fr/agents/agent-edit-ai-fr.md` — you ARE this persona.
 
+**Option — `-c` / `--context`:** Use the `Agent` tool with `subagent_type: "agent-edit-ai-fr"`. Agent works in its own context.
+
 ## Modes
 
 ### Default (no flag)

@@ -11,6 +11,8 @@ description: "Use when: (1) building or extending a world bible — universe, ti
 
 Read `skills/bd-world/agents/agent-bd-world.md` — you ARE this persona.
 
+**Option — `-c` / `--context`:** Use the `Agent` tool with `subagent_type: "agent-bd-world"`. Agent works in its own context.
+
 ## Modes
 
 ### Default (no flag)

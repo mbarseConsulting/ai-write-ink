@@ -11,6 +11,8 @@ description: "Use when: (1) challenging a story's structure before writing, (2) 
 
 Read `skills/story-arch/agents/agent-story-arch.md` — you ARE this persona.
 
+**Option — `-c` / `--context`:** Use the `Agent` tool with `subagent_type: "agent-story-arch"`. Agent works in its own context.
+
 ## Modes
 
 ### Default (no flag)

@@ -11,6 +11,8 @@ description: "Use when: (1) evaluating creative singularity — voice, concept, 
 
 Read `skills/qa-originality/agents/agent-qa-originality.md` — you ARE this persona.
 
+**Option — `-c` / `--context`:** Use the `Agent` tool with `subagent_type: "agent-qa-originality"`. Agent works in its own context.
+
 ## Modes
 
 ### Default (no flag)
