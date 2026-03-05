@@ -1,6 +1,6 @@
-# Script Rules — story-arch
+# Script Rules — arch-ink
 
-> Loaded by: story-arch in `--report` mode when input is a script or chapter plan
+> Loaded by: arch-ink in `--report` mode when input is a script or chapter plan
 > Scope: chapter/scene structure — does the script earn its scenes and serve the arc?
 > Evaluates: structural soundness of a chapter plan BEFORE writing
 > Preferred output: Diagnostic or Assessment
@@ -162,6 +162,120 @@
 
 ---
 
+### pov-choice
+
+**What it looks at:** Whose eyes serve each scene best? Who has the most to lose, learn, or hide here? POV is a structural choice, not a default.
+
+**Failure modes:**
+- POV defaults to the protagonist without considering alternatives
+- POV character is a passive observer — the scene happens around them, not to them
+- POV switches between scenes without structural justification
+- A scene hides information that the POV character would naturally know — POV chosen to manipulate rather than serve the story
+
+**States:**
+- `optimal` — POV character is the one with the most at stake in this scene
+- `functional` — POV works but a different character would serve better
+- `default` — no evidence of deliberate POV choice
+
+**Default sev:** SUG
+
+---
+
+### scene-tension
+
+**What it looks at:** Two dimensions — the conflict (what opposing forces collide in this scene: external obstacle, internal resistance, interpersonal friction) and the stakes (what the character risks if this goes wrong: safety, trust, identity, life).
+
+**Failure modes:**
+- No identifiable conflict — characters agree, nothing opposes the goal
+- Conflict exists but stakes are absent — nothing is at risk
+- Stakes are stated but not felt — reader knows what's at risk intellectually but not emotionally
+- Conflict is external only — no internal or interpersonal dimension
+
+**States:**
+- `charged` — clear conflict with felt stakes across at least two registers
+- `present` — conflict or stakes exist but only on one register
+- `inert` — no identifiable opposition or risk
+
+**Default sev:** MAJ
+
+---
+
+### turning-point
+
+**What it looks at:** The moment within the scene where things shift — the beat that makes this a scene, not a passage. Before the turning point, the scene moves in one direction. After, it moves in another.
+
+**Failure modes:**
+- No identifiable pivot — scene runs at the same temperature throughout
+- Turning point is a new event arriving from outside rather than emerging from the scene's own dynamics
+- Multiple turns of equal weight — scene oscillates without resolution
+- Turn arrives at the beginning — the rest of the scene is aftermath (scene started too early)
+
+**States:**
+- `pivots` — identifiable moment where the scene's direction changes
+- `drifts` — scene moves but without a clear turning point
+- `flat` — no change of direction within the scene
+
+**Default sev:** MAJ
+
+---
+
+### subtext
+
+**What it looks at:** What's happening beneath the surface action — what's unsaid, implied, or hidden from the characters themselves. Subtext is the gap between what characters do and what they mean.
+
+**Failure modes:**
+- Everything is on the surface — characters say exactly what they feel, do exactly what they mean
+- Subtext exists but is immediately made explicit — "she smiled, but inside she was angry"
+- No gap between dialogue and intention — characters are transparent
+- Scene relies entirely on subtext with no surface action — the reader can't access what's happening
+
+**States:**
+- `layered` — visible gap between surface and depth, accessible to the reader
+- `thin` — some gap exists but minimal
+- `absent` — everything is on the surface, or subtext is inaccessible
+
+**Default sev:** SUG
+
+---
+
+### setup-payoff
+
+**What it looks at:** Chekhov's gun in both directions — what does this scene set up for later? What earlier setup does it pay off? Every scene should participate in at least one setup-payoff chain.
+
+**Failure modes:**
+- Scene contains a prominent element (object, information, promise) that is never paid off later
+- Scene pays off something that was never set up — payoff feels unearned
+- A scene is pure setup without standalone value — exists only to serve a later scene
+- Setup is too obvious — reader sees the payoff coming (telegraphed)
+
+**States:**
+- `linked` — scene participates in identifiable setup-payoff chains
+- `isolated` — scene neither sets up nor pays off — structurally disconnected
+- `telegraphed` — setups are too visible, reducing later payoff impact
+
+**Default sev:** MAJ
+
+---
+
+### emotional-trajectory
+
+**What it looks at:** The emotional delta of the scene — what emotion does the reader enter with, what do they leave with? The gap between entry and exit emotion IS the scene's effect.
+
+**Failure modes:**
+- Reader enters and exits in the same emotional state — no delta
+- Emotional shift is unearned — scene hasn't done the work to move the reader
+- Emotional trajectory contradicts the scene's structural purpose — a scene meant to escalate tension ends on comfort
+- Consecutive scenes have identical emotional trajectories — monotone
+
+**States:**
+- `delta` — clear shift between entry and exit emotion, earned by the scene's beats
+- `flat` — reader enters and exits in the same state
+- `contradictory` — emotional trajectory works against the scene's structural purpose
+
+**Default sev:** MAJ
+
+---
+
 ## Verdict Axes
 
 ### structural-soundness
@@ -191,4 +305,4 @@
 - Loaded when input is a script, chapter plan, scene breakdown, or beat sheet.
 - Can combine with structure-rules if arc outline is provided (to verify chapter → arc coherence).
 - Can combine with arc-rules if character arc material is provided.
-- Priority: `chapter-function` and `chapter-change` — if both fail, everything else is secondary.
+- Priority: `chapter-function`, `chapter-change`, and `scene-tension` — if all three fail, everything else is secondary.

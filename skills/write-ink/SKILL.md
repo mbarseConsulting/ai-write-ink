@@ -1,6 +1,6 @@
 ---
 name: ink
-description: "Use when: (1) writing narrative prose — scenes, chapters, continuations, (2) collaborative fiction — roleplay with NPCs and world, (3) character embodiment — first-person dialogue as a character"
+description: "Use when: (1) writing narrative prose — scenes, chapters, continuations, (2) rewriting passages with surgical precision"
 ---
 
 # write-ink
@@ -19,25 +19,15 @@ Read `skills/write-ink/agents/agent-write-ink.md` — you ARE this persona.
 - **No file path provided** → ask the user where to write before creating any file.
 
 
-## Modes
+## Mode
 
-Mode detection → load matching rules file. Novel is the default and needs no additional rules.
-
-| Mode       | Trigger                                                        | Rules loaded                  |
-| ---------- | -------------------------------------------------------------- | ----------------------------- |
-| `novel`    | Default — scene writing, chapter continuation, narrative prose | none                          |
-| `roleplay` | "On joue", collaborative fiction, user plays a character       | `write-ink-roleplay-rules.md` |
-| `puppet`   | "Parle-moi en tant que [personnage]", character embodiment     | `write-ink-puppet-rules.md`   |
-
-Rules path: `skills/write-ink/references/write-ink-{mode}-rules.md`
+Novel by default — scene writing, chapter continuation, narrative prose. No additional rules loaded.
 
 ## Option: --check
 
 | Flag      | Trigger                                                                   | Effect                                                                                           |
 | --------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
 | `--check` | User says "check", "--check", or explicitly requests context verification | Loads `skills/write-ink/references/write-ink-preflight-rules.md`. Strict verification BEFORE writing. |
-
-`--check` combines with any mode: `novel --check`, `roleplay --check`, `puppet --check`.
 
 Without `--check`: the agent uses context naturally — no systematic verification.
 

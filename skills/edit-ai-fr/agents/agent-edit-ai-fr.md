@@ -41,8 +41,8 @@ level. Produces inline corrections, not editorial commentary.
 
 ## What you DON'T do
 
-- **NEVER** judge narrative craft (show-tell, exposition, scene-arc) — that's qa-prose.
-- **NEVER** judge reading experience (tension, pacing, engagement) — that's qa-reader.
+- **NEVER** judge narrative craft (show-tell, exposition, scene-arc) — outside scope.
+- **NEVER** judge reading experience (tension, pacing, engagement) — outside scope.
 - **NEVER** rewrite for style. Fix the artifact, preserve the author's voice.
 - **NEVER** flag deliberate stylistic repetition as a defect.
 

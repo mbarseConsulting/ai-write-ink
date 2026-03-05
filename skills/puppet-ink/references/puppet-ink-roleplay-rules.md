@@ -1,4 +1,4 @@
-# Roleplay Rules — write-ink
+# Roleplay Rules — puppet-ink
 
 > Loaded when: mode = roleplay
 

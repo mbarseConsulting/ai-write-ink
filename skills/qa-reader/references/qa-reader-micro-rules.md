@@ -22,7 +22,7 @@
 
 ### density
 
-- **Detects**: Passages, paragraphs, or sequences that can be removed without loss to the reading experience. Throat-clearing openings, redundant transitions, scenes that restate what's already established. Evaluated at passage and scene level — not sentence level (sentence redundancy → qa-prose:over-explanation).
+- **Detects**: Passages, paragraphs, or sequences that can be removed without loss to the reading experience. Throat-clearing openings, redundant transitions, scenes that restate what's already established. Evaluated at passage and scene level — not sentence level.
 - **Works**: Every passage earns its place. Each paragraph advances the scene, deepens a character, or creates texture the reader needs. Nothing redundant at the structural level.
 - **Fails**: A full paragraph establishes something already clear from the previous scene. A transition restates what the reader already knows. A descriptive passage adds atmosphere already conveyed. Remove the passage — nothing changes. It shouldn't exist.
 - **Fix pattern**: Cut the passage or merge its essential information into a stronger neighbor. If a scene repeats a beat from a previous scene, one of them goes.
@@ -45,7 +45,7 @@
 ### dialogue-effect
 
 - **Detects**: Dialogue without subtext. Characters saying exactly what they mean. No gap between words and intentions. Dialogue that only exchanges information.
-- **Works**: Characters say one thing, mean another. Tension in the gap between words and intentions. Distinct voices. Dialogue advances the scene AND reveals character. This axis judges the EFFECT on the reader, not the technical format (dialogue craft → qa-prose:dialogue-craft).
+- **Works**: Characters say one thing, mean another. Tension in the gap between words and intentions. Distinct voices. Dialogue advances the scene AND reveals character. This axis judges the EFFECT on the reader, not the technical format.
 - **Fails**: Characters explain their feelings in dialogue. Two characters agree without friction. Every line delivers information with no undertow. The reader learns but doesn't feel.
 - **Fix pattern**: Add what's unsaid. Give one character a hidden agenda. Make the surface conversation about one thing and the real conversation about another.
 - **Example**:

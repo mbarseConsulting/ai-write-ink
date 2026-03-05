@@ -37,4 +37,4 @@ Templates path: `skills/outline-ink/references/{name}.md`
 - Each level must be consistent with the level above it. If a saga exists, the arc must serve it. If an arc exists, the chapter must serve it.
 - When material already exists at a higher level (saga, arc): read it before building the lower level.
 - Multiple flags at once: handle one template at a time. Ask which to start with.
-- `--script` is the bridge to ink: once the script is validated, handoff to `write-ink`.
+- `--script` is the bridge to prose: once the script is validated, the handoff is ready.

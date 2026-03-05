@@ -1,4 +1,4 @@
-# Puppet Rules — write-ink
+# Puppet Rules — puppet-ink
 
 > Loaded when: mode = puppet
 

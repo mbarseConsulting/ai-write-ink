@@ -78,7 +78,7 @@ For each work: 4 sub-sections max. Link to detailed outline if it exists.
 **Resonance:**
 - [Connections to other books in the series and to other works.]
 
-> Detail: see `[path to outline-ink-saga or story-arch if it exists]`
+> Detail: see `[path to detailed outline if it exists]`
 
 ##### [Book N]
 

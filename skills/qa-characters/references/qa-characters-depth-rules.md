@@ -3,7 +3,7 @@
 > Scope: character
 > Loaded when: character sheet provided, or text with sufficient character presence
 > Evaluates: Individual character psychology — one character at a time
-> Does NOT evaluate: character arc over time (→ evolution-rules), relationships (→ dynamics-rules), narrative POV technique (→ qa-prose:pov-discipline), POV strategy (→ qa-reader:pov-strategy)
+> Does NOT evaluate: character arc over time (→ evolution-rules), relationships (→ dynamics-rules), narrative POV technique, POV strategy
 > Preferred output: assessment
 
 ---

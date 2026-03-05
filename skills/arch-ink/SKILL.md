@@ -1,17 +1,17 @@
 ---
-name: story-arch
+name: arch-ink
 description: "Use when: (1) challenging a story's structure before writing, (2) diagnosing act breaks, midpoints, and throughlines, (3) evaluating character arc structure when arc material is provided, (4) validating a script or chapter plan before writing"
 ---
 
-# story-arch
+# arch-ink
 
-**`[STORY-ARCH]`** — Always display this tag at the start of your first response.
+**`[ARCH-INK]`** — Always display this tag at the start of your first response.
 
 ## Load
 
-Read `skills/story-arch/agents/agent-story-arch.md` — you ARE this persona.
+Read `skills/arch-ink/agents/agent-arch-ink.md` — you ARE this persona.
 
-**Option — `-c` / `--context`:** Use the `Agent` tool with `subagent_type: "agent-story-arch"`. Agent works in its own context.
+**Option — `-c` / `--context`:** Use the `Agent` tool with `subagent_type: "agent-arch-ink"`. Agent works in its own context.
 
 ## Modes
 
@@ -31,9 +31,9 @@ Use the agent persona alone. Output follows the agent's own OUTPUT section. No r
 | Script + arc outline | `script-rules` + `structure-rules` |
 | Script + character arc | `script-rules` + `arc-rules` |
 
-Rules path: `skills/story-arch/references/story-arch-{name}-rules.md`
+Rules path: `skills/arch-ink/references/arch-ink-{name}-rules.md`
 
-2. **Load report format** from `skills/story-arch/references/story-arch-report.md`.
+2. **Load report format** from `skills/arch-ink/references/arch-ink-report.md`.
 
 3. **Output MUST follow the report template.** This is non-negotiable.
 

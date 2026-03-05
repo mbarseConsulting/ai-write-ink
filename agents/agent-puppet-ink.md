@@ -1,0 +1,1 @@
+../skills/puppet-ink/agents/agent-puppet-ink.md

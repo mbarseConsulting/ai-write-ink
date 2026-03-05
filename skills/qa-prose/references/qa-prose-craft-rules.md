@@ -3,7 +3,7 @@
 > Scope: micro
 > Loaded when: always
 > Evaluates: Writing craft at the sentence and paragraph level
-> Does NOT evaluate: AI patterns (→ edit-ai-fr), French language quality (→ edit-ai-fr)
+> Does NOT evaluate: AI patterns, French language quality
 > Preferred output: inline
 
 ---

@@ -1,4 +1,4 @@
-# story-arch — Report Format
+# arch-ink — Report Format
 
 > Editorial role: structural architect
 > Default output: Diagnostic
@@ -25,17 +25,24 @@
 | act-breaks | structure-rules | MAJ |
 | midpoint | structure-rules | MAJ |
 | central-conflict | structure-rules | BLK |
+| crisis | structure-rules | BLK |
 | thematic-throughline | structure-rules | MAJ |
 | promise-delivery | structure-rules | BLK |
 | reversal-credibility | structure-rules | MAJ |
+| stakes-escalation | structure-rules | MAJ |
+| tension-architecture | structure-rules | MAJ |
+| information-design | structure-rules | MAJ |
 
 ### Macro (arc-rules — loaded when character arc material provided)
 
 | Axis | Source | Default sev |
 |------|--------|-------------|
+| starting-state | arc-rules | MAJ |
 | want-need-split | arc-rules | MAJ |
 | lie-and-ghost | arc-rules | MAJ |
+| transformation-beats | arc-rules | MAJ |
 | arc-completion | arc-rules | MAJ |
+| landing-state | arc-rules | MAJ |
 | subplot-resonance | arc-rules | SUG |
 
 ### Meso (script-rules — loaded when script/chapter plan provided)
@@ -50,6 +57,12 @@
 | information-sequence | script-rules | finding | MAJ |
 | entry-exit-states | script-rules | finding | MAJ |
 | script-specificity | script-rules | finding | SUG |
+| pov-choice | script-rules | finding | SUG |
+| scene-tension | script-rules | finding | MAJ |
+| turning-point | script-rules | finding | MAJ |
+| subtext | script-rules | finding | SUG |
+| setup-payoff | script-rules | finding | MAJ |
+| emotional-trajectory | script-rules | finding | MAJ |
 | structural-soundness | script-rules | verdict | — |
 | writing-readiness | script-rules | verdict | — |
 
@@ -58,7 +71,7 @@
 ## Default format: Diagnostic
 
 ```markdown
-## story-arch — Diagnostic
+## arch-ink — Diagnostic
 
 ### Context
 - **Material**: [synopsis / outline / arc sheet — length, type]
@@ -92,17 +105,24 @@
 | act-breaks | solid / misplaced / absent | [one sentence, in French] | [one sentence, in French] |
 | midpoint | reversing / weak / absent | [one sentence, in French] | [one sentence, in French] |
 | central-conflict | clear and persistent / vague / absent | [one sentence, in French] | [one sentence, in French] |
+| crisis | impossible choice / forced but weak / absent | [one sentence, in French] | [one sentence, in French] |
 | thematic-throughline | visible and anchored / present but passive / absent | [one sentence, in French] | [one sentence, in French] |
 | promise-delivery | honored / partial / betrayed | [one sentence, in French] | [one sentence, in French] |
 | reversal-credibility | prepared / partially prepared / pulled from nowhere | [one sentence, in French] | [one sentence, in French] |
+| stakes-escalation | escalating / flat / inverted | [one sentence, in French] | [one sentence, in French] |
+| tension-architecture | well-paced / monotone / arrhythmic | [one sentence, in French] | [one sentence, in French] |
+| information-design | designed / accidental / flat | [one sentence, in French] | [one sentence, in French] |
 
 > Arc-rules (if loaded):
 
 | Axis | State | Note | Suggestion |
 |------|-------|------|------------|
+| starting-state | established / sketched / absent | [one sentence, in French] | [one sentence, in French] |
 | want-need-split | distinct and in tension / present but passive / absent | [one sentence, in French] | [one sentence, in French] |
 | lie-and-ghost | driving / present / decorative / absent | [one sentence, in French] | [one sentence, in French] |
+| transformation-beats | complete / partial / collapsed | [one sentence, in French] | [one sentence, in French] |
 | arc-completion | earned / declared / partial / absent | [one sentence, in French] | [one sentence, in French] |
+| landing-state | earned and resonant / arrived but hollow / unresolved | [one sentence, in French] | [one sentence, in French] |
 | subplot-resonance | resonant / disconnected / duplicate | [one sentence, in French] | [one sentence, in French] |
 
 ### Strengths
@@ -129,7 +149,7 @@
 ## Script Diagnostic (when script-rules loaded)
 
 ```markdown
-## story-arch — Script Diagnostic
+## arch-ink — Script Diagnostic
 
 ### Context
 - **Material**: [script / chapter plan — chapter N, book title]
@@ -151,10 +171,10 @@
 
 ### Scene Grid
 
-| Scene | Function | Change | Sequence position | Specificity | Verdict |
-|-------|----------|--------|-------------------|-------------|---------|
-| Sc. 1 | [load-bearing / supporting / dead-weight] | [what changes] | [earned / acceptable / arbitrary] | [ready / needs-precision / too-vague] | [one sentence, in French] |
-| Sc. 2 | | | | | |
+| Scene | Function | Change | Tension | Turning point | POV | Subtext | Emotional delta | Verdict |
+|-------|----------|--------|---------|---------------|-----|---------|-----------------|---------|
+| Sc. 1 | [load-bearing / supporting / dead-weight] | [what changes] | [charged / present / inert] | [pivots / drifts / flat] | [optimal / functional / default] | [layered / thin / absent] | [entry → exit] | [one sentence, in French] |
+| Sc. 2 | | | | | | | | |
 
 ### Chapter Grid
 
@@ -165,6 +185,7 @@
 | scene-completeness | complete / gap / major-gap | [one sentence, in French] | [one sentence, in French] |
 | information-sequence | well-sequenced / could-improve / problematic | [one sentence, in French] | [one sentence, in French] |
 | entry-exit-states | propulsive / adequate / dead-end | [one sentence, in French] | [one sentence, in French] |
+| setup-payoff | linked / isolated / telegraphed | [one sentence, in French] | [one sentence, in French] |
 
 ### Strengths
 
@@ -195,7 +216,7 @@
 On specific author question ("does my act 2 work?", "is my midpoint strong enough?").
 
 ```markdown
-## story-arch — Assessment
+## arch-ink — Assessment
 
 ### Verdict
 [Direct answer. 2-3 sentences. Yes / no / partially + WHY. In French.]
@@ -227,7 +248,7 @@ On specific author question ("does my act 2 work?", "is my midpoint strong enoug
 On explicit request ("annotate my outline").
 
 ```markdown
-## story-arch — Inline
+## arch-ink — Inline
 
 [For each issue, in document order:]
 

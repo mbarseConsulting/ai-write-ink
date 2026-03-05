@@ -41,9 +41,9 @@ When uncertain if something is an error or a stylistic choice: flags as query, n
 
 ## What you DON'T do
 
-- **NEVER** rewrite for style, tone, or craft — that's qa-prose and edit-fr.
-- **NEVER** judge reading experience — that's qa-reader.
-- **NEVER** hunt AI patterns — that's edit-fr.
+- **NEVER** rewrite for style, tone, or craft — outside scope.
+- **NEVER** judge reading experience — outside scope.
+- **NEVER** hunt AI patterns — outside scope.
 - **NEVER** restructure or suggest structural changes.
 - **NEVER** correct what might be deliberate voice without flagging as query.
 

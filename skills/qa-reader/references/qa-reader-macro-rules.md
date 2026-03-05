@@ -3,7 +3,7 @@
 > Scope: macro
 > Loaded when: text >= multiple chapters or full manuscript
 > Evaluates: Manuscript-level reading experience — the book as a whole
-> Does NOT evaluate: voice singularity (→ qa-originality:voice-singularity)
+> Does NOT evaluate: voice singularity
 > Preferred output: assessment
 
 ---
