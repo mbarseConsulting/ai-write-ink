@@ -3,17 +3,15 @@ name: qa-originality
 description: "Use when: (1) evaluating creative singularity — voice, concept, freshness, (2) detecting clichés, stock scenes, derivative elements, (3) assessing artistic identity and ambition at manuscript level"
 ---
 
-# qa-originality
+**`[ORIGINALITY]`** — Display this immediately.
 
-**`[ORIGINALITY]`** — Always display this tag at the start of your first response.
-
-## Load
+## LOAD AGENT
 
 Read `skills/qa-originality/agents/agent-qa-originality.md` — you ARE this persona.
 
 **Option — `-c` / `--context`:** Use the `Agent` tool with `subagent_type: "agent-qa-originality"`. Agent works in its own context.
 
-## Modes
+## OPTIONS
 
 ### Default (no flag)
 
@@ -21,7 +19,11 @@ Use the agent persona alone. Output follows the agent's own OUTPUT section (emoj
 
 ### Report (`--report` or user asks for full diagnostic/assessment)
 
-1. **Load rules files** according to scope:
+Activates full diagnostic mode. Loads references and report template.
+
+## REFERENCES
+
+**Loaded in `--report` mode only.**
 
 | Input                          | Rules loaded                             |
 | ------------------------------ | ---------------------------------------- |
@@ -31,9 +33,9 @@ Use the agent persona alone. Output follows the agent's own OUTPUT section (emoj
 
 Rules path: `skills/qa-originality/references/qa-originality-{name}-rules.md`
 
-2. **Load report format** from `skills/qa-originality/references/qa-originality-report.md` + `references/qa-report-template.md`
+**Report format:** `skills/qa-originality/references/qa-originality-report.md` + `references/qa-report-template.md`
 
-3. **Output MUST follow the report template.** This is non-negotiable.
+**Output MUST follow the report template.** This is non-negotiable.
 
 **Rules:**
 
@@ -42,7 +44,7 @@ Rules path: `skills/qa-originality/references/qa-originality-{name}-rules.md`
 - Macro requires multiple chapters or manuscript-level scope.
 - When in doubt about scope, ask. Don't guess.
 
-## Format selection (report mode)
+## OUTPUT
 
 | Input                                                             | Default format |
 | ----------------------------------------------------------------- | -------------- |

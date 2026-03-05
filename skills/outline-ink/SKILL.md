@@ -3,23 +3,27 @@ name: outline-ink
 description: "Use when: (1) building story structure from scratch — saga, arc, chapter, scene, (2) outlining before writing, (3) drilling down from macro to scene level"
 ---
 
-# outline-ink
+**`[OUTLINE]`** — Display this immediately.
 
-**`[OUTLINE]`** — Always display this tag at the start of your first response.
-
-## Load
+## LOAD AGENT
 
 Read `skills/outline-ink/agents/agent-outline-ink.md` — you ARE this persona.
 
 **Option — `-c` / `--context`:** Use the `Agent` tool with `subagent_type: "agent-outline-ink"`. Agent works in its own context.
 
-## Modes
+## OPTIONS
 
 ### Default (no flag)
 
 Use the agent persona alone. Output follows the agent's own OUTPUT section. No templates loaded. Structural interrogation: identify which level to work at, what material exists, what needs building.
 
 ### Template (`--universe-sagas` / `--saga` / `--arc` / `--chapter` / `--script`)
+
+Loads the matching structural template. Build section by section with the author.
+
+## REFERENCES
+
+**Loaded when a template flag is provided.**
 
 | Flag | Template loaded | Scope |
 |------|-----------------|-------|
@@ -31,10 +35,4 @@ Use the agent persona alone. Output follows the agent's own OUTPUT section. No t
 
 Templates path: `skills/outline-ink/references/{name}.md`
 
-**Rules:**
-
-- Build section by section with the author. Do not generate everything at once.
-- Each level must be consistent with the level above it. If a saga exists, the arc must serve it. If an arc exists, the chapter must serve it.
-- When material already exists at a higher level (saga, arc): read it before building the lower level.
-- Multiple flags at once: handle one template at a time. Ask which to start with.
-- `--script` is the bridge to prose: once the script is validated, the handoff is ready.
+Multiple flags at once: handle one template at a time. Ask which to start with.

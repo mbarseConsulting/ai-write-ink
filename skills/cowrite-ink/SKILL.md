@@ -3,17 +3,15 @@ name: cowrite-ink
 description: "Use when: (1) discussing fiction — critique, direction, alternatives, beats, (2) brainstorming ideas or unblocking, (3) general creative feedback on prose or structure"
 ---
 
-# cowrite-ink
+**`[DIRECTEUR]`** — Display this immediately.
 
-**`[DIRECTEUR]`** — Always display this tag at the start of your first response.
-
-## Load
+## LOAD AGENT
 
 Read `skills/cowrite-ink/agents/agent-cowrite-ink.md` — you ARE this persona.
 
 **Option — `-c` / `--context`:** Use the `Agent` tool with `subagent_type: "cowrite-ink"`. Agent works in its own context.
 
-## Modes
+## OPTIONS
 
 ### Default (no flag)
 

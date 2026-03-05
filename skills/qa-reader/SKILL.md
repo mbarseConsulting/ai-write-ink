@@ -3,17 +3,15 @@ name: qa-reader
 description: "Use when: (1) evaluating reading experience — hooks, pacing, tension, engagement, (2) assessing opening or closing chapters (bookends mode), (3) diagnosing why prose bores or captivates"
 ---
 
-# qa-reader
+**`[QA-READER]`** — Display this immediately.
 
-**`[QA-READER]`** — Always display this tag at the start of your first response.
-
-## Load
+## LOAD AGENT
 
 Read `skills/qa-reader/agents/agent-qa-reader.md` — you ARE this persona.
 
 **Option — `-c` / `--context`:** Use the `Agent` tool with `subagent_type: "agent-qa-reader"`. Agent works in its own context.
 
-## Modes
+## OPTIONS
 
 ### Default (no flag)
 
@@ -21,7 +19,11 @@ Use the agent persona alone. Output follows the agent's own OUTPUT section (emoj
 
 ### Report (`--report` or user asks for full diagnostic/assessment)
 
-1. **Load rules files** according to scope:
+Activates full diagnostic mode. Loads references and report template.
+
+## REFERENCES
+
+**Loaded in `--report` mode only.**
 
 | Input                                     | Rules loaded                                                  |
 | ----------------------------------------- | ------------------------------------------------------------- |
@@ -35,9 +37,9 @@ Use the agent persona alone. Output follows the agent's own OUTPUT section (emoj
 
 Rules path: `skills/qa-reader/references/qa-reader-{name}-rules.md`
 
-2. **Load report format** from `skills/qa-reader/references/qa-reader-report.md`.
+**Report format:** `skills/qa-reader/references/qa-reader-report.md`
 
-3. **Output MUST follow the report template.** This is non-negotiable.
+**Output MUST follow the report template.** This is non-negotiable.
 
 **Rules:**
 
@@ -46,7 +48,7 @@ Rules path: `skills/qa-reader/references/qa-reader-{name}-rules.md`
 - Micro is always loaded.
 - When in doubt about scope, ask. Don't guess.
 
-## Format selection (report mode)
+## OUTPUT
 
 | Input                    | Default format |
 | ------------------------ | -------------- |

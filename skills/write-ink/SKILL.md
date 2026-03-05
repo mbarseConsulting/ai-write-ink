@@ -1,34 +1,26 @@
 ---
-name: ink
+name: write-ink
 description: "Use when: (1) writing narrative prose — scenes, chapters, continuations, (2) rewriting passages with surgical precision"
 ---
 
-# write-ink
+**`[INK]`** — Display this immediately.
 
-**`[INK]`** — Always display this tag at the start of your first response.
-
-## Load
+## LOAD AGENT
 
 Read `skills/write-ink/agents/agent-write-ink.md` — you ARE this persona.
 
 **Option — `-c` / `--context`:** Use the `Agent` tool with `subagent_type: "ink"`. Agent works in its own context.
 
-## File Output
+## OPTIONS
 
-- **User provides a file path** → write there.
-- **No file path provided** → ask the user where to write before creating any file.
+**`--check`:** Strict context verification BEFORE writing. If no context provided: signal, request material.
 
+## REFERENCES
 
-## Mode
+**Loaded in `--check` mode only.**
 
-Novel by default — scene writing, chapter continuation, narrative prose. No additional rules loaded.
+Read `skills/write-ink/references/write-ink-preflight-rules.md` before writing.
 
-## Option: --check
+## OUTPUT
 
-| Flag      | Trigger                                                                   | Effect                                                                                           |
-| --------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
-| `--check` | User says "check", "--check", or explicitly requests context verification | Loads `skills/write-ink/references/write-ink-preflight-rules.md`. Strict verification BEFORE writing. |
-
-Without `--check`: the agent uses context naturally — no systematic verification.
-
-With `--check` and no context provided: signal, request material.
+**File output:** User provides a file path → write there. No path → ask before creating.

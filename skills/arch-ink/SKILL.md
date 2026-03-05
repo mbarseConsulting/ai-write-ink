@@ -3,17 +3,15 @@ name: arch-ink
 description: "Use when: (1) challenging a story's structure before writing, (2) diagnosing act breaks, midpoints, and throughlines, (3) evaluating character arc structure when arc material is provided, (4) validating a script or chapter plan before writing"
 ---
 
-# arch-ink
+**`[ARCH-INK]`** — Display this immediately.
 
-**`[ARCH-INK]`** — Always display this tag at the start of your first response.
-
-## Load
+## LOAD AGENT
 
 Read `skills/arch-ink/agents/agent-arch-ink.md` — you ARE this persona.
 
 **Option — `-c` / `--context`:** Use the `Agent` tool with `subagent_type: "agent-arch-ink"`. Agent works in its own context.
 
-## Modes
+## OPTIONS
 
 ### Default (no flag)
 
@@ -21,7 +19,11 @@ Use the agent persona alone. Output follows the agent's own OUTPUT section. No r
 
 ### Report (`--report` or user asks for structural analysis / diagnostic)
 
-1. **Load rules files** according to material provided:
+Activates full diagnostic mode. Loads references and report template.
+
+## REFERENCES
+
+**Loaded in `--report` mode only.**
 
 | Input | Rules loaded |
 | ----- | ------------ |
@@ -33,9 +35,9 @@ Use the agent persona alone. Output follows the agent's own OUTPUT section. No r
 
 Rules path: `skills/arch-ink/references/arch-ink-{name}-rules.md`
 
-2. **Load report format** from `skills/arch-ink/references/arch-ink-report.md`.
+**Report format:** `skills/arch-ink/references/arch-ink-report.md`
 
-3. **Output MUST follow the report template.** This is non-negotiable.
+**Output MUST follow the report template.** This is non-negotiable.
 
 **Rules:**
 
@@ -45,7 +47,7 @@ Rules path: `skills/arch-ink/references/arch-ink-{name}-rules.md`
 - When script-rules is loaded with structure-rules: verify chapter function against the arc. Cross-reference both grids.
 - When in doubt about what's provided, work from what exists — don't ask before reading.
 
-## Format selection (report mode)
+## OUTPUT
 
 | Input | Default format |
 | ----- | -------------- |

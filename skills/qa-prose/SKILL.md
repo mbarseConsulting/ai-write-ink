@@ -3,17 +3,15 @@ name: qa-prose
 description: "Use when: (1) evaluating sentence-level craft — POV, show-tell, dialogue technique, (2) line editing passages, (3) diagnosing why prose feels flat, over-explained, or generic"
 ---
 
-# qa-prose
+**`[PROSE]`** — Display this immediately.
 
-**`[PROSE]`** — Always display this tag at the start of your first response.
-
-## Load
+## LOAD AGENT
 
 Read `skills/qa-prose/agents/agent-qa-prose.md` — you ARE this persona.
 
 **Option — `-c` / `--context`:** Use the `Agent` tool with `subagent_type: "agent-qa-prose"`. Agent works in its own context.
 
-## Modes
+## OPTIONS
 
 ### Default (no flag)
 
@@ -21,7 +19,11 @@ Use the agent persona alone. Output follows the agent's own OUTPUT section (emoj
 
 ### Report (`--report` or user asks for full diagnostic)
 
-1. **Load rules files** according to scope:
+Activates full diagnostic mode. Loads references and report template.
+
+## REFERENCES
+
+**Loaded in `--report` mode only.**
 
 | Input    | Rules loaded  |
 | -------- | ------------- |
@@ -31,11 +33,11 @@ Rules path: `skills/qa-prose/references/qa-prose-{name}-rules.md`
 
 All rules files are always loaded. One scope (micro), no conditional logic.
 
-2. **Load report format** from `skills/qa-prose/references/qa-prose-report.md` + `references/qa-report-template.md`
+**Report format:** `skills/qa-prose/references/qa-prose-report.md` + `references/qa-report-template.md`
 
-3. **Output MUST follow the report template.** This is non-negotiable.
+**Output MUST follow the report template.** This is non-negotiable.
 
-## Format selection (report mode)
+## OUTPUT
 
 | Input                                                   | Default format |
 | ------------------------------------------------------- | -------------- |

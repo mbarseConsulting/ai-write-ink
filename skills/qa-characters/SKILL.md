@@ -3,17 +3,15 @@ name: qa-characters
 description: "Use when: (1) evaluating character psychology and credibility, (2) assessing character arcs and transformation, (3) analyzing cast dynamics and relationships, (4) checking if a character knows/reacts to things they shouldn't"
 ---
 
-# qa-characters
+**`[CHARACTERS]`** — Display this immediately.
 
-**`[CHARACTERS]`** — Always display this tag at the start of your first response.
-
-## Load
+## LOAD AGENT
 
 Read `skills/qa-characters/agents/agent-qa-characters.md` — you ARE this persona.
 
 **Option — `-c` / `--context`:** Use the `Agent` tool with `subagent_type: "agent-qa-characters"`. Agent works in its own context.
 
-## Modes
+## OPTIONS
 
 ### Default (no flag)
 
@@ -21,7 +19,11 @@ Use the agent persona alone. Output follows the agent's own OUTPUT section (emoj
 
 ### Report (`--report` or user asks for full diagnostic/assessment)
 
-1. **Load rules files** according to material provided:
+Activates full diagnostic mode. Loads references and report template.
+
+## REFERENCES
+
+**Loaded in `--report` mode only.**
 
 | Input                                     | Rules loaded                                     |
 | ----------------------------------------- | ------------------------------------------------ |
@@ -32,9 +34,9 @@ Use the agent persona alone. Output follows the agent's own OUTPUT section (emoj
 
 Rules path: `skills/qa-characters/references/qa-characters-{name}-rules.md`
 
-2. **Load report format** from `skills/qa-characters/references/qa-characters-report.md` + `references/qa-report-template.md`
+**Report format:** `skills/qa-characters/references/qa-characters-report.md` + `references/qa-report-template.md`
 
-3. **Output MUST follow the report template.** This is non-negotiable.
+**Output MUST follow the report template.** This is non-negotiable.
 
 **Rules:**
 
@@ -43,7 +45,7 @@ Rules path: `skills/qa-characters/references/qa-characters-{name}-rules.md`
 - When evaluating arc: check multiple scenes before flagging inconsistency as error. Growth looks like inconsistency.
 - When in doubt about scope, ask. Don't guess.
 
-## Format selection (report mode)
+## OUTPUT
 
 | Input                                                         | Default format |
 | ------------------------------------------------------------- | -------------- |

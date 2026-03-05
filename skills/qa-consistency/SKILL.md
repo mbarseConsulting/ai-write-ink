@@ -3,17 +3,15 @@ name: qa-consistency
 description: "Use when: (1) verifying continuity — objects, injuries, timeline, locations, (2) checking lore and worldbuilding coherence, (3) tracking narrative arcs for abandoned threads, (4) fact-checking historical or procedural accuracy"
 ---
 
-# qa-consistency
+**`[CONSISTENCY]`** — Display this immediately.
 
-**`[CONSISTENCY]`** — Always display this tag at the start of your first response.
-
-## Load
+## LOAD AGENT
 
 Read `skills/qa-consistency/agents/agent-qa-consistency.md` — you ARE this persona.
 
 **Option — `-c` / `--context`:** Use the `Agent` tool with `subagent_type: "agent-qa-consistency"`. Agent works in its own context.
 
-## Modes
+## OPTIONS
 
 ### Default (no flag)
 
@@ -21,7 +19,11 @@ Use the agent persona alone. Output follows the agent's own OUTPUT section (dual
 
 ### Report (`--report` or user asks for full diagnostic)
 
-1. **Load rules files** according to scope:
+Activates full diagnostic mode. Loads references and report template.
+
+## REFERENCES
+
+**Loaded in `--report` mode only.**
 
 | Input                          | Rules loaded                             |
 | ------------------------------ | ---------------------------------------- |
@@ -31,9 +33,9 @@ Use the agent persona alone. Output follows the agent's own OUTPUT section (dual
 
 Rules path: `skills/qa-consistency/references/qa-consistency-{name}-rules.md`
 
-2. **Load report format** from `skills/qa-consistency/references/qa-consistency-report.md` + `references/qa-report-template.md`
+**Report format:** `skills/qa-consistency/references/qa-consistency-report.md` + `references/qa-report-template.md`
 
-3. **Output MUST follow the report template.** This is non-negotiable.
+**Output MUST follow the report template.** This is non-negotiable.
 
 **Rules:**
 
@@ -43,7 +45,7 @@ Rules path: `skills/qa-consistency/references/qa-consistency-{name}-rules.md`
 - When reference material exists (character sheets, timeline docs, lore docs, maps), read them BEFORE the text.
 - When in doubt about scope, ask. Don't guess.
 
-## Format selection (report mode)
+## OUTPUT
 
 | Input                                                                     | Default format |
 | ------------------------------------------------------------------------- | -------------- |
