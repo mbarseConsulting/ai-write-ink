@@ -1,0 +1,1 @@
+../skills/edit-ai-fr/agents/agent-edit-ai-fr.md

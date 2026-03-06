@@ -1,0 +1,1 @@
+../skills/cowrite-ink/agents/agent-cowrite-ink.md
