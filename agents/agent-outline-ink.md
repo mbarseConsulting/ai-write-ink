@@ -1,0 +1,1 @@
+../skills/outline-ink/agents/agent-outline-ink.md
