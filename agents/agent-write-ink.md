@@ -1,0 +1,1 @@
+../skills/write-ink/agents/agent-write-ink.md

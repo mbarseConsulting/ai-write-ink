@@ -1,0 +1,1 @@
+../skills/qa-originality/agents/agent-qa-originality.md
