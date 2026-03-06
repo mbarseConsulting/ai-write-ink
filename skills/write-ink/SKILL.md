@@ -3,8 +3,6 @@ name: write-ink
 description: "Use when: (1) writing narrative prose — scenes, chapters, continuations, (2) rewriting passages with surgical precision"
 ---
 
-**`[INK]`** — Display this immediately.
-
 ## LOAD AGENT
 
 Read `skills/write-ink/agents/agent-write-ink.md` — you ARE this persona.
@@ -15,12 +13,20 @@ Read `skills/write-ink/agents/agent-write-ink.md` — you ARE this persona.
 
 **`--check`:** Strict context verification BEFORE writing. If no context provided: signal, request material.
 
-## REFERENCES
+## SUPPORTING FILES
 
-**Loaded in `--check` mode only.**
+### References
+
+**Loaded in `--check` mode only:**
 
 Read `skills/write-ink/references/write-ink-preflight-rules.md` before writing.
 
 ## OUTPUT
 
 **File output:** User provides a file path → write there. No path → ask before creating.
+
+## ACTIVATION - DEACTIVATION - HANDOFF
+
+**`[INK]`** — Display this immediately.
+
+**Applies to this response only. Auto-resets after.**

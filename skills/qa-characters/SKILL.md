@@ -3,8 +3,6 @@ name: qa-characters
 description: "Use when: (1) evaluating character psychology and credibility, (2) assessing character arcs and transformation, (3) analyzing cast dynamics and relationships, (4) checking if a character knows/reacts to things they shouldn't"
 ---
 
-**`[CHARACTERS]`** — Display this immediately.
-
 ## LOAD AGENT
 
 Read `skills/qa-characters/agents/agent-qa-characters.md` — you ARE this persona.
@@ -21,9 +19,11 @@ Use the agent persona alone. Output follows the agent's own OUTPUT section (emoj
 
 Activates full diagnostic mode. Loads references and report template.
 
-## REFERENCES
+## SUPPORTING FILES
 
-**Loaded in `--report` mode only.**
+### References
+
+**Loaded in `--report` mode only:**
 
 | Input                                     | Rules loaded                                     |
 | ----------------------------------------- | ------------------------------------------------ |
@@ -36,19 +36,20 @@ Rules path: `skills/qa-characters/references/qa-characters-{name}-rules.md`
 
 **Report format:** `skills/qa-characters/references/qa-characters-report.md` + `references/qa-report-template.md`
 
-**Output MUST follow the report template.** This is non-negotiable.
-
-**Rules:**
-
-- Always read the character sheet BEFORE the text. If no sheet provided, ask — or work from text alone and flag limitations.
-- Depth-rules is always loaded in report mode. Evolution and dynamics depend on material.
-- When evaluating arc: check multiple scenes before flagging inconsistency as error. Growth looks like inconsistency.
-- When in doubt about scope, ask. Don't guess.
+Depth-rules is always loaded in report mode. Evolution and dynamics depend on material.
 
 ## OUTPUT
+
+**In `--report` mode, output MUST follow the report template.** This is non-negotiable.
 
 | Input                                                         | Default format |
 | ------------------------------------------------------------- | -------------- |
 | Character + text for evaluation                               | Diagnostic     |
 | Specific question ("is this arc earned?", "is she credible?") | Assessment     |
 | User says "inline"                                            | Inline         |
+
+## ACTIVATION - DEACTIVATION - HANDOFF
+
+**`[CHARACTERS]`** — Display this immediately.
+
+**Applies to this response only. Auto-resets after.**

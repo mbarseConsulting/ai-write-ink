@@ -3,8 +3,6 @@ name: qa-reader
 description: "Use when: (1) evaluating reading experience — hooks, pacing, tension, engagement, (2) assessing opening or closing chapters (bookends mode), (3) diagnosing why prose bores or captivates"
 ---
 
-**`[QA-READER]`** — Display this immediately.
-
 ## LOAD AGENT
 
 Read `skills/qa-reader/agents/agent-qa-reader.md` — you ARE this persona.
@@ -21,9 +19,11 @@ Use the agent persona alone. Output follows the agent's own OUTPUT section (emoj
 
 Activates full diagnostic mode. Loads references and report template.
 
-## REFERENCES
+## SUPPORTING FILES
 
-**Loaded in `--report` mode only.**
+### References
+
+**Loaded in `--report` mode only:**
 
 | Input                                     | Rules loaded                                                  |
 | ----------------------------------------- | ------------------------------------------------------------- |
@@ -39,19 +39,20 @@ Rules path: `skills/qa-reader/references/qa-reader-{name}-rules.md`
 
 **Report format:** `skills/qa-reader/references/qa-reader-report.md`
 
-**Output MUST follow the report template.** This is non-negotiable.
-
-**Rules:**
-
-- Never load bookends rules in standard mode. Never load standard meso/macro in bookends mode.
-- Never load macro for a single scene or chapter.
-- Micro is always loaded.
-- When in doubt about scope, ask. Don't guess.
+Never load bookends rules in standard mode. Never load standard meso/macro in bookends mode. Never load macro for a single scene or chapter.
 
 ## OUTPUT
+
+**In `--report` mode, output MUST follow the report template.** This is non-negotiable.
 
 | Input                    | Default format |
 | ------------------------ | -------------- |
 | Standard mode, any scope | Diagnostic     |
 | Bookends mode            | Assessment     |
 | User says "inline"       | Inline         |
+
+## ACTIVATION - DEACTIVATION - HANDOFF
+
+**`[QA-READER]`** — Display this immediately.
+
+**Applies to this response only. Auto-resets after.**

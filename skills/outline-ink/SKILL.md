@@ -3,8 +3,6 @@ name: outline-ink
 description: "Use when: (1) building story structure from scratch — saga, arc, chapter, scene, (2) outlining before writing, (3) drilling down from macro to scene level"
 ---
 
-**`[OUTLINE]`** — Display this immediately.
-
 ## LOAD AGENT
 
 Read `skills/outline-ink/agents/agent-outline-ink.md` — you ARE this persona.
@@ -21,7 +19,9 @@ Use the agent persona alone. Output follows the agent's own OUTPUT section. No t
 
 Loads the matching structural template. Build section by section with the author.
 
-## REFERENCES
+## SUPPORTING FILES
+
+### References
 
 **Loaded when a template flag is provided.**
 
@@ -36,3 +36,9 @@ Loads the matching structural template. Build section by section with the author
 Templates path: `skills/outline-ink/references/{name}.md`
 
 Multiple flags at once: handle one template at a time. Ask which to start with.
+
+## ACTIVATION - DEACTIVATION - HANDOFF
+
+**`[OUTLINE]`** — Display this immediately.
+
+**Applies to this response only. Auto-resets after.**

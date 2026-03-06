@@ -2,7 +2,7 @@
 
 > Editorial role: structural architect
 > Default output: Diagnostic
-> Content language: French. Column headers: English. Axis names and severity codes: English.
+> Content language: match the text's language. Column headers: English. Axis names and severity codes: English.
 
 ---
 
@@ -85,7 +85,7 @@
 
 | # | Sev | Axis | Beat | Issue | Direction |
 |---|-----|------|------|-------|-----------|
-| 1 | BLK | central-conflict | Act 1 | [≤15 words, in French] | [≤15 words, in French] |
+| 1 | BLK | central-conflict | Act 1 | [≤15 words, in text language] | [≤15 words, in text language] |
 
 > Direction column: MANDATORY. No finding without a concrete suggestion.
 
@@ -93,7 +93,7 @@
 
 | Pattern | Count | Examples | Sev | Direction |
 |---------|-------|----------|-----|-----------|
-| [name] | N | beat A, beat B, beat C | MAJ | [systemic direction ≤15 words, in French] |
+| [name] | N | beat A, beat B, beat C | MAJ | [systemic direction ≤15 words, in text language] |
 
 > 3+ occurrences of same type = pattern. Max 3 examples. One systemic direction.
 > If none: omit section.
@@ -102,28 +102,28 @@
 
 | Axis | State | Note | Suggestion |
 |------|-------|------|------------|
-| act-breaks | solid / misplaced / absent | [one sentence, in French] | [one sentence, in French] |
-| midpoint | reversing / weak / absent | [one sentence, in French] | [one sentence, in French] |
-| central-conflict | clear and persistent / vague / absent | [one sentence, in French] | [one sentence, in French] |
-| crisis | impossible choice / forced but weak / absent | [one sentence, in French] | [one sentence, in French] |
-| thematic-throughline | visible and anchored / present but passive / absent | [one sentence, in French] | [one sentence, in French] |
-| promise-delivery | honored / partial / betrayed | [one sentence, in French] | [one sentence, in French] |
-| reversal-credibility | prepared / partially prepared / pulled from nowhere | [one sentence, in French] | [one sentence, in French] |
-| stakes-escalation | escalating / flat / inverted | [one sentence, in French] | [one sentence, in French] |
-| tension-architecture | well-paced / monotone / arrhythmic | [one sentence, in French] | [one sentence, in French] |
-| information-design | designed / accidental / flat | [one sentence, in French] | [one sentence, in French] |
+| act-breaks | solid / misplaced / absent | [one sentence, in text language] | [one sentence, in text language] |
+| midpoint | reversing / weak / absent | [one sentence, in text language] | [one sentence, in text language] |
+| central-conflict | clear and persistent / vague / absent | [one sentence, in text language] | [one sentence, in text language] |
+| crisis | impossible choice / forced but weak / absent | [one sentence, in text language] | [one sentence, in text language] |
+| thematic-throughline | visible and anchored / present but passive / absent | [one sentence, in text language] | [one sentence, in text language] |
+| promise-delivery | honored / partial / betrayed | [one sentence, in text language] | [one sentence, in text language] |
+| reversal-credibility | prepared / partially prepared / pulled from nowhere | [one sentence, in text language] | [one sentence, in text language] |
+| stakes-escalation | escalating / flat / inverted | [one sentence, in text language] | [one sentence, in text language] |
+| tension-architecture | well-paced / monotone / arrhythmic | [one sentence, in text language] | [one sentence, in text language] |
+| information-design | designed / accidental / flat | [one sentence, in text language] | [one sentence, in text language] |
 
 > Arc-rules (if loaded):
 
 | Axis | State | Note | Suggestion |
 |------|-------|------|------------|
-| starting-state | established / sketched / absent | [one sentence, in French] | [one sentence, in French] |
-| want-need-split | distinct and in tension / present but passive / absent | [one sentence, in French] | [one sentence, in French] |
-| lie-and-ghost | driving / present / decorative / absent | [one sentence, in French] | [one sentence, in French] |
-| transformation-beats | complete / partial / collapsed | [one sentence, in French] | [one sentence, in French] |
-| arc-completion | earned / declared / partial / absent | [one sentence, in French] | [one sentence, in French] |
-| landing-state | earned and resonant / arrived but hollow / unresolved | [one sentence, in French] | [one sentence, in French] |
-| subplot-resonance | resonant / disconnected / duplicate | [one sentence, in French] | [one sentence, in French] |
+| starting-state | established / sketched / absent | [one sentence, in text language] | [one sentence, in text language] |
+| want-need-split | distinct and in tension / present but passive / absent | [one sentence, in text language] | [one sentence, in text language] |
+| lie-and-ghost | driving / present / decorative / absent | [one sentence, in text language] | [one sentence, in text language] |
+| transformation-beats | complete / partial / collapsed | [one sentence, in text language] | [one sentence, in text language] |
+| arc-completion | earned / declared / partial / absent | [one sentence, in text language] | [one sentence, in text language] |
+| landing-state | earned and resonant / arrived but hollow / unresolved | [one sentence, in text language] | [one sentence, in text language] |
+| subplot-resonance | resonant / disconnected / duplicate | [one sentence, in text language] | [one sentence, in text language] |
 
 ### Strengths
 
@@ -139,7 +139,7 @@
 
 ### Priority fixes
 
-1. BLK #[N] — [highest-impact action, in French]
+1. BLK #[N] — [highest-impact action, in text language]
 
 > Max 5. Impact order. Empty if no findings.
 ```
@@ -164,8 +164,8 @@
 
 | # | Sev | Axis | Scene | Issue | Direction |
 |---|-----|------|-------|-------|-----------|
-| 1 | BLK | chapter-function | — | [≤15 words, in French] | [≤15 words, in French] |
-| 2 | MAJ | scene-function | Sc. 3 | [≤15 words, in French] | [≤15 words, in French] |
+| 1 | BLK | chapter-function | — | [≤15 words, in text language] | [≤15 words, in text language] |
+| 2 | MAJ | scene-function | Sc. 3 | [≤15 words, in text language] | [≤15 words, in text language] |
 
 > Direction column: MANDATORY. No finding without a concrete suggestion.
 
@@ -173,19 +173,19 @@
 
 | Scene | Function | Change | Tension | Turning point | POV | Subtext | Emotional delta | Verdict |
 |-------|----------|--------|---------|---------------|-----|---------|-----------------|---------|
-| Sc. 1 | [load-bearing / supporting / dead-weight] | [what changes] | [charged / present / inert] | [pivots / drifts / flat] | [optimal / functional / default] | [layered / thin / absent] | [entry → exit] | [one sentence, in French] |
+| Sc. 1 | [load-bearing / supporting / dead-weight] | [what changes] | [charged / present / inert] | [pivots / drifts / flat] | [optimal / functional / default] | [layered / thin / absent] | [entry → exit] | [one sentence, in text language] |
 | Sc. 2 | | | | | | | | |
 
 ### Chapter Grid
 
 | Axis | State | Note | Suggestion |
 |------|-------|------|------------|
-| chapter-function | drives-arc / supports-arc / decorative / aimless | [one sentence, in French] | [one sentence, in French] |
-| chapter-change | irreversible / shift / static | [one sentence, in French] | [one sentence, in French] |
-| scene-completeness | complete / gap / major-gap | [one sentence, in French] | [one sentence, in French] |
-| information-sequence | well-sequenced / could-improve / problematic | [one sentence, in French] | [one sentence, in French] |
-| entry-exit-states | propulsive / adequate / dead-end | [one sentence, in French] | [one sentence, in French] |
-| setup-payoff | linked / isolated / telegraphed | [one sentence, in French] | [one sentence, in French] |
+| chapter-function | drives-arc / supports-arc / decorative / aimless | [one sentence, in text language] | [one sentence, in text language] |
+| chapter-change | irreversible / shift / static | [one sentence, in text language] | [one sentence, in text language] |
+| scene-completeness | complete / gap / major-gap | [one sentence, in text language] | [one sentence, in text language] |
+| information-sequence | well-sequenced / could-improve / problematic | [one sentence, in text language] | [one sentence, in text language] |
+| entry-exit-states | propulsive / adequate / dead-end | [one sentence, in text language] | [one sentence, in text language] |
+| setup-payoff | linked / isolated / telegraphed | [one sentence, in text language] | [one sentence, in text language] |
 
 ### Strengths
 
@@ -197,14 +197,14 @@
 
 | Verdict | State | Justification | Suggestion |
 |---------|-------|---------------|------------|
-| structural-soundness | solid / weakened / broken | [one sentence, in French] | [one sentence, in French] |
-| writing-readiness | ready / needs-revision / premature | [one sentence, in French] | [one sentence, in French] |
+| structural-soundness | solid / weakened / broken | [one sentence, in text language] | [one sentence, in text language] |
+| writing-readiness | ready / needs-revision / premature | [one sentence, in text language] | [one sentence, in text language] |
 
 ### Global verdict
 [1-2 sentences. Is this script ready to write?]
 
 ### Priority fixes
-1. BLK #[N] — [highest-impact action, in French]
+1. BLK #[N] — [highest-impact action, in text language]
 
 > Max 5. Impact order. Empty if no findings.
 ```
@@ -229,7 +229,7 @@ On specific author question ("does my act 2 work?", "is my midpoint strong enoug
 
 | Axis | State | Note | Suggestion |
 |------|-------|------|------------|
-| [relevant axis] | [state] | [one sentence, in French] | [one sentence, in French] |
+| [relevant axis] | [state] | [one sentence, in text language] | [one sentence, in text language] |
 
 ### Key issues
 [If problems found. Beat cited, with direction. In French.]
@@ -253,13 +253,13 @@ On explicit request ("annotate my outline").
 [For each issue, in document order:]
 
 **[Beat / section]** — [summary ≤5 words]
-SEV axis — [issue, ≤15 words, in French]
-→ [proposed fix, in French]
+SEV axis — [issue, ≤15 words, in text language]
+→ [proposed fix, in text language]
 
 [For notable strengths:]
 
 **[Beat / section]**
-✓ [structural mechanism that works — one sentence, in French]
+✓ [structural mechanism that works — one sentence, in text language]
 
 ---
 

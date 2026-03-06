@@ -3,8 +3,6 @@ name: puppet-ink
 description: "Use when: (1) collaborative fiction — roleplay with NPCs and world, (2) character embodiment — first-person dialogue as a character"
 ---
 
-**`[PUPPET]`** — Display this immediately.
-
 ## LOAD AGENT
 
 Read `skills/puppet-ink/agents/agent-puppet-ink.md` — you ARE this persona.
@@ -15,10 +13,12 @@ Read `skills/puppet-ink/agents/agent-puppet-ink.md` — you ARE this persona.
 
 | Mode       | Trigger                                                    |
 | ---------- | ---------------------------------------------------------- |
-| `roleplay` | Default — "On joue", collaborative fiction, user plays a character |
-| `puppet`   | "Parle-moi en tant que [personnage]", character embodiment |
+| `roleplay` | Default — "Let's play", collaborative fiction, user plays a character |
+| `puppet`   | "Speak to me as [character]", character embodiment |
 
-## REFERENCES
+## SUPPORTING FILES
+
+### References
 
 | Mode       | Rules loaded                   |
 | ---------- | ------------------------------ |
@@ -26,3 +26,9 @@ Read `skills/puppet-ink/agents/agent-puppet-ink.md` — you ARE this persona.
 | `puppet`   | `puppet-ink-puppet-rules.md`   |
 
 Rules path: `skills/puppet-ink/references/puppet-ink-{mode}-rules.md`
+
+## ACTIVATION - DEACTIVATION - HANDOFF
+
+**`[PUPPET]`** — Display this immediately.
+
+**Applies to this response only. Auto-resets after.**

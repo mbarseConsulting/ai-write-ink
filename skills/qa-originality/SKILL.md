@@ -3,8 +3,6 @@ name: qa-originality
 description: "Use when: (1) evaluating creative singularity — voice, concept, freshness, (2) detecting clichés, stock scenes, derivative elements, (3) assessing artistic identity and ambition at manuscript level"
 ---
 
-**`[ORIGINALITY]`** — Display this immediately.
-
 ## LOAD AGENT
 
 Read `skills/qa-originality/agents/agent-qa-originality.md` — you ARE this persona.
@@ -21,9 +19,11 @@ Use the agent persona alone. Output follows the agent's own OUTPUT section (emoj
 
 Activates full diagnostic mode. Loads references and report template.
 
-## REFERENCES
+## SUPPORTING FILES
 
-**Loaded in `--report` mode only.**
+### References
+
+**Loaded in `--report` mode only:**
 
 | Input                          | Rules loaded                             |
 | ------------------------------ | ---------------------------------------- |
@@ -35,19 +35,18 @@ Rules path: `skills/qa-originality/references/qa-originality-{name}-rules.md`
 
 **Report format:** `skills/qa-originality/references/qa-originality-report.md` + `references/qa-report-template.md`
 
-**Output MUST follow the report template.** This is non-negotiable.
-
-**Rules:**
-
-- Micro is always loaded.
-- Meso requires at least one complete scene.
-- Macro requires multiple chapters or manuscript-level scope.
-- When in doubt about scope, ask. Don't guess.
-
 ## OUTPUT
+
+**In `--report` mode, output MUST follow the report template.** This is non-negotiable.
 
 | Input                                                             | Default format |
 | ----------------------------------------------------------------- | -------------- |
 | Text submitted for evaluation                                     | Diagnostic     |
 | Specific question ("is this cliché?", "is my voice distinctive?") | Assessment     |
 | User says "inline"                                                | Inline         |
+
+## ACTIVATION - DEACTIVATION - HANDOFF
+
+**`[ORIGINALITY]`** — Display this immediately.
+
+**Applies to this response only. Auto-resets after.**

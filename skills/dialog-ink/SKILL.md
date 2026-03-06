@@ -3,8 +3,6 @@ name: dialog-ink
 description: "Use when: (1) writing dialogue scenes between characters, (2) staging physical movement and spatial action during exchanges, (3) creating raw scene material for prose romanticization"
 ---
 
-**`[DIALOG]`** — Display this immediately.
-
 ## LOAD AGENT
 
 Read `skills/dialog-ink/agents/agent-dialog-ink.md` — you ARE this persona.
@@ -15,12 +13,14 @@ Read `skills/dialog-ink/agents/agent-dialog-ink.md` — you ARE this persona.
 
 | Mode    | Trigger                                                          | Output                 |
 | ------- | ---------------------------------------------------------------- | ---------------------- |
-| `scene` | Default — "écris une scène", "dialogue entre X et Y"             | Semi-theatrical script |
+| `scene` | Default — "write a scene", "dialogue between X and Y"            | Semi-theatrical script |
 | `pass`  | "pass", "--pass", user provides existing prose to analyze        | Annotated diagnostic   |
 
 **`--check`:** Strict context verification BEFORE writing. Combines with any mode. If no context provided: signal, request material.
 
-## REFERENCES
+## SUPPORTING FILES
+
+### References
 
 | Mode/Flag | Rules loaded |
 | --------- | ------------ |
@@ -35,3 +35,9 @@ Rules path: `skills/dialog-ink/references/{name}.md`
 ## OUTPUT
 
 **File output:** User provides a file path → write there. No path → ask before creating.
+
+## ACTIVATION - DEACTIVATION - HANDOFF
+
+**`[DIALOG]`** — Display this immediately.
+
+**Applies to this response only. Auto-resets after.**

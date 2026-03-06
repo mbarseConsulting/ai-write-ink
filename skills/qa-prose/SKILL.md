@@ -3,8 +3,6 @@ name: qa-prose
 description: "Use when: (1) evaluating sentence-level craft — POV, show-tell, dialogue technique, (2) line editing passages, (3) diagnosing why prose feels flat, over-explained, or generic"
 ---
 
-**`[PROSE]`** — Display this immediately.
-
 ## LOAD AGENT
 
 Read `skills/qa-prose/agents/agent-qa-prose.md` — you ARE this persona.
@@ -21,9 +19,11 @@ Use the agent persona alone. Output follows the agent's own OUTPUT section (emoj
 
 Activates full diagnostic mode. Loads references and report template.
 
-## REFERENCES
+## SUPPORTING FILES
 
-**Loaded in `--report` mode only.**
+### References
+
+**Loaded in `--report` mode only:**
 
 | Input    | Rules loaded  |
 | -------- | ------------- |
@@ -35,12 +35,18 @@ All rules files are always loaded. One scope (micro), no conditional logic.
 
 **Report format:** `skills/qa-prose/references/qa-prose-report.md` + `references/qa-report-template.md`
 
-**Output MUST follow the report template.** This is non-negotiable.
-
 ## OUTPUT
+
+**In `--report` mode, output MUST follow the report template.** This is non-negotiable.
 
 | Input                                                   | Default format |
 | ------------------------------------------------------- | -------------- |
 | Text submitted for evaluation                           | Diagnostic     |
 | Specific craft question ("is this showing or telling?") | Assessment     |
 | User says "inline"                                      | Inline         |
+
+## ACTIVATION - DEACTIVATION - HANDOFF
+
+**`[PROSE]`** — Display this immediately.
+
+**Applies to this response only. Auto-resets after.**
