@@ -1,9 +1,7 @@
 # qa-originality — Report Format
 
-> Extends: qa-report-template.md (generic formats, rules, suggestion law)
-> Editorial role: editorial scout
-> Default output: assessment
-> Suggestion level: positioning directions — where the work is derivative and where it's singular
+> Editorial role: editorial scout | Default output: assessment
+> Suggestion level: positioning directions — where derivative, where singular
 > Output language: French content, English column headers. Axis names stay English.
 
 ---
@@ -12,109 +10,78 @@
 
 | Axis                  | Source      | Type    | Default Sev |
 | --------------------- | ----------- | ------- | ----------- |
-| formulation-freshness | micro-rules | finding | 🔵          |
-| linguistic-audacity   | micro-rules | finding | 🔵          |
-| voice-singularity     | micro-rules | verdict | —           |
-| situation-freshness   | meso-rules  | finding | 🔵          |
-| trope-handling        | meso-rules  | finding | 🔵          |
-| narrative-audacity    | meso-rules  | finding | 🔵          |
-| scene-coherence       | meso-rules  | verdict | —           |
-| concept-originality   | macro-rules | verdict | —           |
-| arc-originality       | macro-rules | verdict | —           |
-| ambition              | macro-rules | verdict | —           |
-| artistic-identity     | macro-rules | verdict | —           |
-| maturity              | macro-rules | verdict | —           |
+| formulation-freshness | micro-rules | finding | blue        |
+| linguistic-audacity   | micro-rules | finding | blue        |
+| voice-singularity     | micro-rules | verdict | --          |
+| situation-freshness   | meso-rules  | finding | blue        |
+| trope-handling        | meso-rules  | finding | blue        |
+| narrative-audacity    | meso-rules  | finding | blue        |
+| scene-coherence       | meso-rules  | verdict | --          |
+| concept-originality   | macro-rules | verdict | --          |
+| arc-originality       | macro-rules | verdict | --          |
+| ambition              | macro-rules | verdict | --          |
+| artistic-identity     | macro-rules | verdict | --          |
+| maturity              | macro-rules | verdict | --          |
+
+Each axis is defined ONCE in its source rules file. This registry is a routing index only.
+
+---
+
+## Gating Summary
+
+- voice-singularity capped by formulation-freshness (see micro-rules)
+- scene-coherence capped by meso finding axes (see meso-rules)
+- artistic-identity capped by concept-originality + arc-originality (see macro-rules)
+- maturity capped by ambition (see macro-rules)
 
 ---
 
 ## Language Convention
 
-- Column headers: English.
-- Cell content (issues, notes, suggestions, directions): French.
-- Axis names: English (technical identifiers).
-- Section headings in output: English.
-- First impression, verdicts, closing lines: French.
+- English: column headers, axis names, section headings.
+- French: cell content, suggestions, directions, first impression, verdicts, closing lines.
 
 ---
 
-## Originality-Specific Rules
-
-These extend the generic report rules from qa-report-template.md:
+## Report Rules
 
 ### Source Law
 
-Every finding of déjà-vu NAMES the source: the convention, the trope, the author, the genre expectation. Not just "cliché" — FROM WHERE.
+Every deja-vu NAMES the source: convention, trope, author, genre expectation. Not just "cliche" — FROM WHERE.
 
 ### Singularity Law
 
 Every strength names WHY it's original — the mechanism that makes it irreplaceable.
 
+### Genealogy Law
+
+Every stock / derivative finding (red severity) MUST include creative genealogy: 2-3 works that did the same move + 1 that swerved. Non-negotiable for red. Encouraged for yellow.
+
 ---
 
 ## Format Overrides
 
-Uses formats from qa-report-template.md with these qa-originality specifics:
-
 ### Assessment (default)
-
-Header:
 
 ```markdown
 ## qa-originality — Assessment
 
 ### Verdict
 
-[Réponse directe en français. 2-3 phrases. Ce texte est-il singulier — et pourquoi, ou pourquoi pas.]
+[Reponse directe en francais. 2-3 phrases. Ce texte est-il singulier — et pourquoi, ou pourquoi pas.]
 
 ### Context
-
-- **Refs provided**: [fiches, docs — ou « aucune »]
-- **Refs missing**: [ce qui aiderait — ou « complet »]
+- **Refs provided**: [fiches, docs — ou "aucune"]
+- **Refs missing**: [ce qui aiderait — ou "complet"]
 ```
 
-Grid states per axis:
-
-- formulation-freshness: fresh / mixed / stock
-- linguistic-audacity: daring / competent / timid
-- voice-singularity: distinctive / emerging / competent / generic
-- situation-freshness: surprising / familiar-with-swerve / stock
-- trope-handling: transcended / subverted / followed / unaware
-- narrative-audacity: bold / some risks / safe
-- scene-coherence: unified / mostly coherent / assembled / fractured
-- concept-originality: genuinely new / fresh combination / familiar with texture / derivative
-- arc-originality: surprising-inevitable / some surprises / predictable / formulaic
-- ambition: ambitious / competent / safe / timid
-- artistic-identity: irreplaceable / memorable / competent / interchangeable
-- maturity: masterful / confident / developing / uncontrolled
-
-Issue column must NAME the source: quel trope, quelle convention, quel précédent.
-Strengths must name WHY it's irreplaceable, not just "good."
+Grid states: defined in each rules file. Do NOT redefine here.
+Apply all Report Rules above.
 
 ### Diagnostic (on explicit request)
 
-Header:
-
-```markdown
-## qa-originality — Diagnostic
-
-### Context
-
-- **Text**: [longueur, type]
-- **Refs provided**: [fiches, docs — ou « aucune »]
-- **Refs missing**: [ce qui aiderait — ou « complet »]
-- **Scope**: [rules files chargés]
-
-### First Impression
-
-[2-3 phrases en français. Première réaction de scout : ce texte se distingue ou pas.]
-```
+Header: `## qa-originality — Diagnostic` then Context block (Text, Refs provided, Refs missing, Scope) then `### First Impression` (2-3 phrases en francais).
 
 ### Inline (on explicit request)
 
-Header:
-
-```markdown
-## qa-originality — Inline
-```
-
-Each finding names the source of the déjà-vu. Each direction points toward singularity.
+Header: `## qa-originality — Inline`. Apply all Report Rules.
