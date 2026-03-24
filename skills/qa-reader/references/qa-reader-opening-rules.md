@@ -11,77 +11,95 @@
 
 ### first-sentence-impact
 
-- **Detects**: First sentences that explain, describe weather, or set up context instead of creating a question, image, or voice.
-- **Works**: The first sentence is an audition. It creates curiosity, an image, or a voice. The reader decides in this line whether to trust the author.
-- **Fails**: The first sentence is neutral, informational, or decorative. It could be removed without loss. It doesn't make the reader need the second sentence.
-- **Fix pattern**: Replace with a line that creates an immediate question, plants a vivid image, or establishes a voice with attitude. No setup — engagement.
-- **Example**:
+- **Detects**: First sentences that explain, describe weather, or set up context instead of creating a question, image, or voice. Also: gimmick openings (shock value, artificial mystery) disconnected from the story's actual content.
+- **Works**: The first sentence is an audition. It creates curiosity, an image, or a voice. The best first sentences do triple duty: engage (hook), establish voice (contract), and orient (setting/character). They also set psychic distance for the opening. The hook must be HONEST — it promises what the book delivers.
+- **Fails**: The first sentence is neutral, informational, or decorative. It doesn't make the reader need the second sentence. Or: a gimmick that promises an experience the text doesn't deliver.
+- **Fix pattern**: Replace with a line that creates an immediate question, plants a vivid image, or establishes a voice with attitude. Test: does this sentence make the next sentence NECESSARY? Does it make me trust this author's mind?
+- **Mechanism markers**: Meta-narrative openings ("l'histoire que je vais raconter"), temporal context ("c'etait en 1987"), weather/setting descriptions without character, abstract statements ("les choses avaient change"). The "audition test": after reading this one sentence, does the reader want to hear more from this voice?
+- **Genre examples**:
+  - *Thriller*: "Le dernier message disait simplement : Cours." → Danger, question, urgence.
+  - *Litteraire*: "Personne ne savait depuis quand il parlait aux murs, mais les murs, eux, avaient cesse de repondre." → Voix, image, question.
+  - *Romance*: "La premiere chose qu'elle remarqua, c'est qu'il occupait exactement la place qu'elle avait reservee." → Chimie, friction, personnage.
+  - *Horreur*: "Le bruit avait cesse a trois heures du matin, ce qui etait pire." → Etrangete, malaise, question.
+  - *SF*: "Elle verifia l'heure sur trois cadrans — un pour chaque gravite." → Monde, personnage, banalite-comme-merveille.
+  - *Historical*: "Le bourreau arriva en retard, comme chaque mardi." → Periode, voix, dark humor.
+- **Counter-example**:
   > "L'histoire que je vais vous raconter commence un mardi de novembre."
-  > → Annonce — on dit au lecteur qu'on va raconter au lieu de raconter
-  > → Commencer dans l'action ou la perception — pas dans le métadiscours
+  > → Annonce — on dit au lecteur qu'on va raconter au lieu de raconter.
+  > → Commencer dans l'action ou la perception — pas dans le metadiscours.
 
 ### opening-contract
 
-- **Detects**: First paragraphs that fail to establish the reading contract: POV, tone, register, world, the author's relationship with language. Contracts broken later.
-- **Works**: The first paragraph tells the reader exactly what kind of book this is. Every element of the contract — voice, register, distance, world — is sustained throughout.
-- **Fails**: The opening promises literary intimacy but the book delivers action-adventure. Or the opening is lyrical but the prose becomes flat by chapter 2. The contract is set and then violated.
-- **Fix pattern**: Align the opening with what the book actually delivers. If the book is a thriller, the opening should FEEL like a thriller. The contract must be honest.
+- **Detects**: First paragraphs that fail to establish the reading contract: POV, tone, register, world, the author's relationship with language. Contracts broken later. Also: contracts so generic they don't establish any expectations.
+- **Works**: The first paragraph tells the reader exactly what kind of book this is. Every element of the contract is sustained throughout. The reader knows after the first paragraph whether this is literary, genre, experimental, intimate, epic.
+- **Fails**: The opening promises literary intimacy but delivers action-adventure. The opening is lyrical but prose becomes flat by chapter 2. Or: the opening is so generic it doesn't establish any contract at all.
+- **Fix pattern**: Align the opening with what the book actually delivers. If the book is a thriller, the opening should FEEL like a thriller. If literary, the first sentence should demonstrate the author's relationship with language.
+- **Mechanism markers**: Compare register, distance, pacing, and tone between first page and a page from the middle. If they don't match, the contract is broken. The reader's subconscious calibration in the opening shapes all subsequent expectations.
+- **Genre note**: Romance readers expect to meet both love interests early. Thriller readers expect to sense the danger. SF/Fantasy readers expect a window into the world. Breaking these without offering something better is a contract violation.
 - **Example**:
-  > (Opening in intimate first-person present, then switching to distant third-person past by chapter 3)
-  > → Contrat rompu — le registre de l'ouverture ne correspond pas à la suite
-  > → Aligner l'ouverture sur le registre dominant, ou justifier la transition
+  > (Ouverture en premiere personne present intime, puis passage a la troisieme personne passe distant au chapitre 3)
+  > → Contrat rompu — le registre de l'ouverture ne correspond pas a la suite. The reader calibrated for intimacy and got distance.
+  > → Aligner l'ouverture sur le registre dominant, ou justifier la transition.
 
 ### entry-orientation
 
-- **Detects**: Readers lost on the first page. Missing answers to: who, where, when, why care. Confusion that isn't compensated by sensory grounding or intrigue.
-- **Works**: Within the first page: the reader knows (or has clues about) who they're following, where they are, when this is, and why it matters. Not all explicit — but the reader isn't lost.
-- **Fails**: Three pages in and the reader has no anchor. No character, no setting, no time. In medias res without the sensory grounding that compensates for narrative mystery.
-- **Fix pattern**: Anchor one element immediately — a character with a name and a physical action, a specific setting, a clear temporal marker. Mystery is fine. Confusion is not.
+- **Detects**: Readers lost on the first page. Missing answers to: who, where, when, why care. Confusion not compensated by sensory grounding or intrigue. Also: over-orientation (too much context too fast) that bores.
+- **Works**: Within the first page: the reader knows (or has clues about) who they're following, where they are, when this is, and why it matters. Not all explicit — but the reader isn't lost. Orientation through action and perception, not narrated setup.
+- **Fails**: Three pages in with no anchor. In medias res without sensory grounding. Or: first page answers all four questions in exhaustive detail — oriented but bored.
+- **Fix pattern**: Anchor one element immediately — a character with a name and a physical action, a specific setting, a temporal marker. Mystery is fine. Confusion is not.
+- **Mechanism markers**: Count the four anchors on the first page: character (name or strong identification), place (specific enough to see), time (even vague), stakes (why should I care?). Zero or one = confusion. Two = fragile. Three or four = oriented. The distinction: mystery withholds ANSWERS but provides GROUNDING. Confusion withholds grounding itself.
 - **Example**:
-  > "Les choses avaient changé. Tout était différent maintenant. On ne pouvait plus revenir en arrière."
-  > → Trois phrases abstraites — aucune orientation, aucun ancrage
-  > → Un personnage, un lieu, un geste concret dans la première phrase
+  > "Les choses avaient change. Tout etait different maintenant. On ne pouvait plus revenir en arriere."
+  > → Trois phrases abstraites — aucune orientation, aucun ancrage. Qui parle ? Ou ? Quand ? De quoi ? Drama without a stage.
+  > → "Marc posa la cle sur le comptoir vide — le comptoir ou, la veille encore, il y avait deux tasses."
 
 ### character-introduction
 
-- **Detects**: Protagonist introduced through description rather than action. Physical portrait before the reader has a reason to care. Character described instead of revealed.
-- **Works**: The reader meets someone they want to FOLLOW — not like, follow. Curiosity, concern, recognition, fascination. The character DOES something that reveals who they are.
-- **Fails**: Two paragraphs of physical description. The character is presented from the outside. The reader knows what they look like but not who they are.
-- **Fix pattern**: Introduce through action, choice, or reaction. What the character DOES in the first scene tells the reader everything a physical description can't.
+- **Detects**: Protagonist introduced through description rather than action. Physical portrait before the reader has a reason to care. Also: characters introduced through internal monologue about their own traits ("Marie had always been stubborn") — telling about character rather than showing in action.
+- **Works**: The reader meets someone they want to FOLLOW. The character DOES something that reveals who they are. A character who pockets a stranger's lighter reveals more than a paragraph of physical description. The strongest introductions show a choice that reveals values AND creates a question.
+- **Fails**: Two paragraphs of physical description. The character is presented from outside. The reader learns ABOUT the character instead of MEETING them.
+- **Fix pattern**: Introduce through action, choice, or reaction. Show a choice that reveals values. Show a reaction to the unexpected that reveals character under pressure.
+- **Mechanism markers**: Inventory first characterization beats: external (appearance, age, clothing) or internal (choice, reaction, desire, contradiction)? Heavily external = a character the reader can see but doesn't know. The "follow test": after the first paragraph with this character, does the reader want to follow them — not because they're likeable, but because they're INTERESTING?
+- **Genre note**: Romance can include physical description IF filtered through the other love interest's attraction — it's a reaction, not a portrait. Thriller introduces through action under pressure or competence under duress. Literary through quality of perception.
 - **Example**:
-  > "Marie avait les cheveux bruns, les yeux verts, et un visage fin encadré de taches de rousseur."
-  > → Portrait physique — le lecteur ne sait pas QUI elle est
-  > → Montrer Marie en train d'agir — son premier geste la définit
+  > "Marie avait les cheveux bruns, les yeux verts, et un visage fin encadre de taches de rousseur."
+  > → Portrait physique — le lecteur ne sait pas QUI elle est. No personality, no desire, no contradiction.
+  > → "Marie rangea le couteau dans le tiroir des couverts, lame vers le haut. Ca l'amusait que personne ne s'en soit jamais plaint."
 
 ### world-entry
 
-- **Detects**: World introduction that stalls the story. Encyclopedia entries disguised as opening. Too much context, or too little grounding.
-- **Works**: Enough context to orient, not so much it stalls. Details are specific and lived-in, not encyclopedic. The reader enters a world, not a briefing. The iceberg principle: the world exists beyond what's shown.
-- **Fails**: The first three pages explain the political system, the magic rules, or the historical context before anything happens. Or: a scene occurs in a total void with no world.
-- **Fix pattern**: Enter the world through a character's perception. One specific, lived-in detail is worth more than a page of context. Show the world in use, not in explanation.
+- **Detects**: World introduction that stalls the story. Encyclopedia entries disguised as opening. Too much context, or too little grounding. Also: worldbuilding through character thoughts that are really author exposition ("As she walked, she reflected on how the three kingdoms had been at war...").
+- **Works**: Enough to orient, not so much it stalls. Details are specific and lived-in, not encyclopedic. The iceberg principle: the world exists beyond what's shown. The reader learns the rules by watching them applied, not by reading them stated. What does the character TAKE FOR GRANTED? That's how you show a world.
+- **Fails**: First three pages explain political system, magic rules, or historical context before anything happens. Or: a scene in a total void. Or: character thinks about their world in ways no native would.
+- **Fix pattern**: Enter through character perception. One specific, lived-in detail beats a page of context. Show the world in use, not in explanation.
+- **Mechanism markers**: Count paragraphs of exposition vs. scene before the first dramatic action. More than two pure context paragraphs = stall risk. The "lived-in test": does the detail feel like something the character takes for granted (lived-in) or something the author explains to the reader (briefing)? The "native test": would someone who grew up in this world think about it this way?
+- **Genre note**: SF/Fantasy has the hardest challenge — details should serve double duty (worldbuilding AND tension). Historical must be FELT, not stated — a single specific detail (gas lamp smell, crinoline weight) does more than a date.
 - **Example**:
-  > "Le royaume de Valdris était gouverné depuis trois siècles par la dynastie des Haelmar, qui avait instauré un système de..."
-  > → Exposition de worldbuilding — briefing, pas entrée dans un monde
-  > → Un personnage qui vit dans ce monde — ce qu'il voit, subit, contourne
+  > "Le royaume de Valdris etait gouverne depuis trois siecles par la dynastie des Haelmar, qui avait instaure un systeme de..."
+  > → Exposition de worldbuilding — briefing, pas entree dans un monde.
+  > → "Elle contourna le checkpoint des Haelmar sans ralentir — ils ne controlaient plus rien depuis la troisieme revolte."
 
 ### information-control
 
-- **Detects**: Imbalance between mystery and orientation. Too much withheld (reader gives up) or too much given (reader bored). Curiosity not sustained.
-- **Works**: What's withheld creates curiosity. What's given creates grounding. The balance sustains the reader: enough to orient, enough mystery to pull forward.
-- **Fails**: Everything is explained — no questions to drive reading. Or nothing is explained — the reader has no handhold and gives up.
-- **Fix pattern**: For each piece of information: does revealing it create engagement (ground) or kill it (spoil)? Does withholding it create curiosity (mystery) or frustration (confusion)?
+- **Detects**: Imbalance between mystery and orientation. Too much withheld (reader gives up) or too much given (reader bored). Also: artificial mystery — information withheld from the reader that the POV character clearly has, creating frustration rather than curiosity. The reader senses manipulation.
+- **Works**: What's withheld creates curiosity. What's given creates grounding. The balance sustains the reader. The POV character's knowledge is shared naturally — mystery comes from what the CHARACTER doesn't know, not from what the author withholds while the character knows it.
+- **Fails**: Everything explained — no questions to drive reading. Or: nothing explained — reader has no handhold. Or: the POV character clearly knows something but the author prevents the reader from knowing it — artificial suspense.
+- **Fix pattern**: For each piece of information: does revealing it create engagement or kill it? Does withholding it create curiosity or frustration? Rule: if the POV character knows it, the reader should generally know it — find other sources of mystery.
+- **Mechanism markers**: List every piece of information given in the first chapter. For each: ORIENTING (reader needs it) or SPOILING (kills a question)? Then list reader questions: INTRIGUING (want to know) or FRUSTRATING (can't engage without knowing)? The "patience test": is the reader's patience being rewarded or taxed?
 - **Example**:
-  > (Opening that explains the character's backstory, motivation, and goal in the first two pages)
-  > → Tout est donné — aucune question ouverte, rien à découvrir
-  > → Retenir le pourquoi, montrer le quoi — le lecteur veut comprendre
+  > (Ouverture qui explique le passe, la motivation et l'objectif du personnage en deux pages)
+  > → Tout est donne — aucune question ouverte, rien a decouvrir. No engine.
+  > → Retenir le pourquoi, montrer le quoi — le lecteur veut comprendre. Donner l'ACTION, retenir la RAISON. L'ecart est le moteur.
 
 ### hook-architecture
 
-- **Detects**: Chapter 1 ending that doesn't create a need for chapter 2. Clean resolution, summary, or fade-out at the end of the opening chapter.
-- **Works**: The end of chapter 1 makes the reader NEED chapter 2. Not want — NEED. A question unanswered, a promise half-made, a door opened onto something impossible to walk away from.
-- **Fails**: Chapter 1 ends with the character going to bed, a neat summary, or a resolved emotional beat. The reader can close the book here without regret.
-- **Fix pattern**: End chapter 1 on an open beat: a revelation that changes everything, a question that demands an answer, or a decision that creates irreversible consequences.
+- **Detects**: Chapter 1 ending that doesn't create a need for chapter 2. Clean resolution, summary, or fade-out. Also: the "false hook" — artificial urgency rather than organic pull.
+- **Works**: The end of chapter 1 makes the reader NEED chapter 2. Character-driven hooks ("I need to know what she decides") outlast plot-driven ones ("I need to know what exploded").
+- **Fails**: Chapter 1 ends with sleep, neat summary, or resolved beat. The reader can close the book without regret. Or: a cheap manufactured cliffhanger.
+- **Fix pattern**: End on an open beat: revelation, unanswered question, irreversible decision.
+- **Mechanism markers**: The "bookstore test" — a browsing reader reads chapter 1 in the store. Does the ending create UNFINISHED BUSINESS that follows them out? If the reader can close the book and walk away without a nagging question, the hook failed.
+- **Genre note**: Thriller = detonation, revelation, or threat — putting the book down should feel dangerous. Romance = central relationship tension established and unresolved — the reader MUST know what happens between these two. Literary = can end quietly, but must plant a question; a resonant image that promises depth. Horror = wrongness confirmed — something is genuinely wrong.
 - **Example**:
-  > "Satisfaite de sa première journée, elle rangea ses affaires et se prépara pour le lendemain."
-  > → Résolution complète — aucune raison de tourner la page
-  > → Finir sur l'élément qui rend le lendemain dangereux ou irrésistible
+  > "Satisfaite de sa premiere journee, elle rangea ses affaires et se prepara pour le lendemain."
+  > → Resolution complete — aucune raison de tourner la page. Every signal says "you can stop here."
+  > → "Elle rangea ses affaires — sauf l'enveloppe. L'enveloppe, elle n'y avait pas encore touche."
