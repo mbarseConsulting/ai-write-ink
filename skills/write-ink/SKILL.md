@@ -1,7 +1,6 @@
 ---
 name: ink
 description: "Use when: (1) writing narrative prose — scenes, chapters, continuations, (2) rewriting passages with surgical precision"
-disable-model-invocation: true
 ---
 
 ## LOAD AGENT

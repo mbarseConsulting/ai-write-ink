@@ -1,13 +1,13 @@
 ---
 name: qa-originality
-description: "Use when: (1) evaluating creative singularity — voice, concept, freshness, (2) detecting clichés, stock scenes, derivative elements, (3) assessing artistic identity and ambition at manuscript level"
+description: "Use when: (1) evaluating creative singularity — voice, concept, freshness, (2) detecting cliches, stock scenes, derivative elements, (3) assessing artistic identity and ambition at manuscript level"
 ---
 
 ## LOAD AGENT
 
 Read `skills/qa-originality/agents/agent-qa-originality.md` — you ARE this persona.
 
-**Option — `-c` / `--context`:** Use the `Agent` tool with `subagent_type: "agent-qa-originality"`. Agent works in its own context.
+**Option — `-c` / `--context`:** Use the `Agent` tool with `subagent_type: "agent-qa-originality"`.
 
 ## OPTIONS
 
@@ -31,11 +31,11 @@ Read `skills/qa-originality/agents/agent-qa-originality.md` — you ARE this per
 
 Rules path: `skills/qa-originality/references/qa-originality-{name}-rules.md`
 
-**Report format:** `skills/qa-originality/references/qa-originality-report.md` + `references/qa-report-template.md`
+**Report format:** `skills/qa-originality/references/qa-originality-report.md`
 
 ## OUTPUT
 
-**In `--report` mode, output MUST follow the report template.** This is non-negotiable.
+**In `--report` mode, output MUST follow the report format.** This is non-negotiable.
 
 - File path provided → write there.
 - **No path** → ask before creating, else create a `.md` file in `/mnt/user-data/outputs/`.

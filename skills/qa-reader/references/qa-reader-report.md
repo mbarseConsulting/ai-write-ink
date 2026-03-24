@@ -12,35 +12,44 @@
 
 ### Standard Mode — Always loaded
 
-| Axis            | Source      | Type    | Default Sev |
-| --------------- | ----------- | ------- | ----------- |
-| hook            | micro-rules | finding | 🟡          |
-| density         | micro-rules | finding | 🟡          |
-| sensory-clarity | micro-rules | finding | 🟡          |
-| dialogue-effect | micro-rules | finding | 🔵          |
-| sentence-rhythm | micro-rules | finding | 🔵          |
-| word-precision  | micro-rules | finding | 🔵          |
+| Axis              | Source      | Type    | Default Sev |
+| ----------------- | ----------- | ------- | ----------- |
+| hook              | micro-rules | finding | 🟡          |
+| density           | micro-rules | finding | 🟡          |
+| sensory-clarity   | micro-rules | finding | 🟡          |
+| showing-vs-telling| micro-rules | finding | 🟡          |
+| psychic-distance  | micro-rules | finding | 🟡          |
+| dialogue-effect   | micro-rules | finding | 🔵          |
+| sentence-rhythm   | micro-rules | finding | 🔵          |
+| word-precision    | micro-rules | finding | 🔵          |
 
 ### Standard Mode — Loaded per scope
 
-| Axis               | Source        | Type    | Default Sev | Loaded when       |
-| ------------------ | ------------- | ------- | ----------- | ----------------- |
-| tension            | scene-rules   | finding | 🔴          | >= 1 scene        |
-| scene-arc          | scene-rules   | finding | 🔴          | >= 1 scene        |
-| scene-economy      | scene-rules   | finding | 🟡          | >= 1 scene        |
-| microtension       | scene-rules   | finding | 🔵          | >= 1 scene        |
-| character-agency   | scene-rules   | finding | 🟡          | >= 1 scene        |
-| pacing             | scene-rules   | finding | 🟡          | >= 1 scene        |
-| pov-strategy       | scene-rules   | finding | 🟡          | >= 1 scene        |
-| temporal-effect    | scene-rules   | finding | 🟡          | >= 1 scene        |
-| chapter-ending     | chapter-rules | finding | 🟡          | >= 1 chapter      |
-| emotional-truth    | chapter-rules | finding | 🔴          | >= 1 chapter      |
-| information-reveal | chapter-rules | finding | 🟡          | >= 1 chapter      |
-| necessity          | chapter-rules | verdict | —           | >= 1 chapter      |
-| tonal-consistency  | macro-rules   | finding | 🟡          | multiple chapters |
-| narrative-arc      | macro-rules   | verdict | —           | multiple chapters |
-| thematic-resonance | macro-rules   | verdict | —           | multiple chapters |
-| global-engagement  | macro-rules   | verdict | —           | multiple chapters |
+| Axis                | Source        | Type    | Default Sev | Loaded when       |
+| ------------------- | ------------- | ------- | ----------- | ----------------- |
+| tension             | scene-rules   | finding | 🔴          | >= 1 scene        |
+| scene-arc           | scene-rules   | finding | 🔴          | >= 1 scene        |
+| scene-economy       | scene-rules   | finding | 🟡          | >= 1 scene        |
+| microtension        | scene-rules   | finding | 🔵          | >= 1 scene        |
+| character-agency    | scene-rules   | finding | 🟡          | >= 1 scene        |
+| internal-stakes     | scene-rules   | finding | 🟡          | >= 1 scene        |
+| motivation-reaction | scene-rules   | finding | 🟡          | >= 1 scene        |
+| pacing              | scene-rules   | finding | 🟡          | >= 1 scene        |
+| pov-strategy        | scene-rules   | finding | 🟡          | >= 1 scene        |
+| temporal-effect     | scene-rules   | finding | 🟡          | >= 1 scene        |
+| chapter-ending      | chapter-rules | finding | 🟡          | >= 1 chapter      |
+| emotional-truth     | chapter-rules | finding | 🔴          | >= 1 chapter      |
+| information-reveal  | chapter-rules | finding | 🟡          | >= 1 chapter      |
+| scene-sequel-balance| chapter-rules | finding | 🟡          | >= 1 chapter      |
+| necessity           | chapter-rules | verdict | —           | >= 1 chapter      |
+| tonal-consistency   | macro-rules   | finding | 🟡          | multiple chapters |
+| narrative-momentum  | macro-rules   | finding | 🟡          | multiple chapters |
+| vivid-continuous-dream | macro-rules | finding | 🟡          | multiple chapters |
+| reader-fatigue      | macro-rules   | finding | 🟡          | multiple chapters |
+| narrative-arc       | macro-rules   | verdict | —           | multiple chapters |
+| singular-voice      | macro-rules   | verdict | —           | multiple chapters |
+| thematic-resonance  | macro-rules   | verdict | —           | multiple chapters |
+| global-engagement   | macro-rules   | verdict | —           | multiple chapters |
 
 ### Bookends Mode
 
@@ -64,7 +73,7 @@
 | genre-contract           | promise-rules | verdict | —           | opening + closing     |
 | thematic-arc             | promise-rules | verdict | —           | opening + closing     |
 | promise-fulfillment      | promise-rules | verdict | —           | opening + closing     |
-| arc-resolution           | promise-rules | verdict | —           | opening + closing     |
+| arc-completion           | promise-rules | verdict | —           | opening + closing     |
 | surprise-inevitability   | promise-rules | verdict | —           | opening + closing     |
 
 ---
