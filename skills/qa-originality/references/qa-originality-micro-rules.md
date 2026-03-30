@@ -11,34 +11,41 @@
 
 ### formulation-freshness
 
-- **Detects**: Stock metaphors, generic images, off-the-shelf formulations. Also detects fresh, world-anchored images that work.
-- **Works**: Every image is specific to the scene, the character, and the world. No metaphor has been used by a thousand other novels. The formulation makes the reader pause and see differently.
-- **Fails**: "Son coeur se serra." "Un frisson lui parcourut l'échine." "Le silence pesait." Stock images that belong to every novel and no novel.
-- **Fix pattern**: Replace the stock image with one anchored in the specific world, character, and moment. What would THIS character compare it to, given THEIR experience?
+- **States**: fresh / mixed / stock
+  - **fresh**: Every image is scene-specific and character-anchored. No metaphor belongs to another novel.
+  - **mixed**: Some formulations are world-anchored; others fall back on generic images.
+  - **stock**: Off-the-shelf metaphors throughout. Images that belong to every novel and no novel.
+- **Detects**: Stock metaphors, generic images, off-the-shelf formulations. Also detects fresh, world-anchored images.
+- **Fix pattern**: "What would THIS character compare it to, given THEIR job, obsessions, sensory world?" Rewrite one image. 10 min.
+- **Genealogy trigger**: On stock finding, name 2-3 novels with same image and 1 that found a different angle.
 - **Example**:
-  > "Le temps s'arrêta. Le monde autour d'elle cessa d'exister."
-  > → Stock — formulation vue dans des milliers de romans
-  > → Ancrer dans le monde : qu'est-ce qui s'arrête concrètement pour CE personnage ?
+  > "Le temps s'arreta. Le monde autour d'elle cessa d'exister."
+  > Lineage: frozen-time image as Musso, Levy, every romance since the 1990s.
+  > Swerve: Ernaux, *Les Annees* — time compresses into an inventory of objects.
+  > Direction: anchor in THIS character's perception — what specifically changes in their sensory field?
 
 ### linguistic-audacity
 
-- **Detects**: Stylistic risk-taking — neologisms, broken rules, unexpected word choices, inventive constructions. Deliberate departures from convention (not errors).
-- **Works**: The risk creates an effect no conventional construction could achieve. A neologism captures something. A broken rule serves meaning. The reader feels the author's confidence.
-- **Fails**: The prose is correct but plays it safe. Every sentence follows convention. No surprises in word choice or structure. Competent but timid.
-- **Fix pattern**: Identify the moments where conventional language falls short and push — find the word that doesn't exist yet, the construction that breaks the rule to create meaning.
+- **States**: daring / uneven / safe
+  - **daring**: Departures from convention that create effects no standard construction could. Neologisms that capture, broken rules that serve meaning.
+  - **uneven**: Occasional risks land; the rest defaults to convention.
+  - **safe**: Correct but timid throughout. No surprises in word choice or structure.
+- **Detects**: Stylistic risk-taking — neologisms, broken rules, unexpected word choices, inventive constructions.
+- **Fix pattern**: Pick ONE sentence where standard syntax falls short. Break exactly that rule in service of the effect. 10 min.
 - **Example**:
-  > "Elle ressentit une grande tristesse."
-  > → Conventionnel, sans risque — la langue ne fait rien que le dictionnaire ne fasse
-  > → Chercher l'angle linguistique unique : un mot inventé, un détournement, une image neuve
+  > "Elle ressentit une grande tristesse." Conventionnel, sans risque.
+  > Direction: find the linguistic move that performs the emotion instead of naming it.
 
 ---
 
-## Verdict Axes
+## Verdict Axis
 
 ### voice-singularity
 
 - **Assesses**: Whether the prose bears a specific authorial fingerprint at the paragraph level.
-- **Works**: Could any author have written this sentence, or does it belong to THIS writer? Distinctive rhythm, vocabulary, angle of perception. Voice is the hardest thing to achieve and the most valuable.
-- **Fails**: The prose is competent but anonymous. Any skilled author could have produced these paragraphs. No personality in the language.
-- **States**: distinctive / emerging / competent / generic
-- **Suggestion pattern**: If emerging → identify the passages where voice breaks through and use them as template for the rest. If competent → what does this author notice that others don't? Find their angle and amplify. If generic → the author needs to find what they're angry about, obsessed with, unable to say conventionally.
+- **States**: distinctive (unmistakable — remove the byline and you know who wrote it; specific rhythm, lexical field, perceptual angle) / emerging (flashes of singularity between generic scaffolding; voice exists but inconsistent) / competent (fluent, professional, no personality; could belong to any author in genre) / generic (default prose, no authorial choice visible)
+- **Gating rule**: CANNOT score "distinctive" if formulation-freshness is "stock". Cap at "emerging."
+- **Suggestion pattern**:
+  - emerging: Quote 2-3 passages where voice breaks through. Identify shared pattern. Apply to 5 flat paragraphs. 10 min each.
+  - competent: Find one passage with specific perception — the voice seed. Rewrite 3 flat paragraphs through same lens. 10 min each.
+  - generic: Cross out every image another author could have written. What's left is the voice. If nothing, write one paragraph using only THIS character's sensory world. 10 min.
