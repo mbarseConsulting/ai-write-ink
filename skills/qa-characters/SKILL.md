@@ -32,7 +32,7 @@ Read `skills/qa-characters/agents/agent-qa-characters.md` — you ARE this perso
 
 Rules path: `skills/qa-characters/references/qa-characters-{name}-rules.md`
 
-**Report format:** `skills/qa-characters/references/qa-characters-report.md` + `references/qa-report-template.md`
+**Report format:** `skills/qa-characters/references/qa-characters-report.md`
 
 Depth-rules is always loaded in report mode. Evolution and dynamics depend on material.
 

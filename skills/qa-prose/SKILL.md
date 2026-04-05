@@ -31,7 +31,7 @@ Rules path: `skills/qa-prose/references/qa-prose-{name}-rules.md`
 
 All rules files are always loaded. One scope (micro), no conditional logic.
 
-**Report format:** `skills/qa-prose/references/qa-prose-report.md` + `references/qa-report-template.md`
+**Report format:** `skills/qa-prose/references/qa-prose-report.md`
 
 ## OUTPUT
 

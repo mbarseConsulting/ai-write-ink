@@ -31,7 +31,7 @@ Read `skills/qa-consistency/agents/agent-qa-consistency.md` — you ARE this per
 
 Rules path: `skills/qa-consistency/references/qa-consistency-{name}-rules.md`
 
-**Report format:** `skills/qa-consistency/references/qa-consistency-report.md` + `references/qa-report-template.md`
+**Report format:** `skills/qa-consistency/references/qa-consistency-report.md`
 
 ## OUTPUT
 
