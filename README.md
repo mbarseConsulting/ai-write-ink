@@ -4,12 +4,13 @@ _AI artifacts for writing and editing literary fiction — from structure to fin
 
 ## Description
 
-A full creative writing pipeline: calibrate your genre, architect your story, outline from saga to scene, write prose, stage dialogue, forge competitive drafts, run QA diagnostics, and edit to publication-ready. 18 specialized skills that cover every stage of the fiction craft.
+A full creative writing pipeline: calibrate your genre, architect your story, outline from saga to scene, write prose, stage dialogue, forge competitive drafts, run QA diagnostics, and edit to publication-ready. 19 specialized skills that cover every stage of the fiction craft.
 
 ## Overview
 
 | Skill            | Role                                                                                                                    |
 | ---------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| `load`           | Session loader — spawns a resident team (writer + qa) once at session start, then feeds it incrementally to avoid reload churn |
 | `calibrate-ink`  | Genre calibrator — sets genre conventions for the session: tone, style expectations, failure modes                      |
 | `arch-ink`       | Story architect — structural editor upstream: acts, arcs, throughlines, promise/delivery, want/need                     |
 | `outline-ink`    | Story outliner — builds narrative structure macro to micro: saga → arc → chapter → scene script                         |
@@ -29,9 +30,24 @@ A full creative writing pipeline: calibrate your genre, architect your story, ou
 | `edit-ai-fr`     | French prose cleaner — removes AI patterns, fixes language errors, repairs mechanical repetition and dialogue format    |
 | `edit-final`     | Copyeditor — last pass: typos, typography, mechanical consistency, AI safety net                                       |
 
-**18 skills** — 1 calibrator, 1 upstream (structure), 1 outliner, 1 director, 1 dramaturg, 1 creative detonator, 1 stage director, 1 writer, 1 modifier, 1 forge, 1 triage, 5 QA diagnostics, 2 editors
+**19 skills** — 1 session loader, 1 calibrator, 1 upstream (structure), 1 outliner, 1 director, 1 dramaturg, 1 creative detonator, 1 stage director, 1 writer, 1 modifier, 1 forge, 1 triage, 5 QA diagnostics, 2 editors
+
+## Session start
+
+A writing session starts with `/load-ink`, which spawns the **resident team** — `writer` (prose) and `qa` (quality judge) — as two named, persistent subagents. The whole session then feeds this team incrementally instead of respawning subagents per scene, so residents accumulate calibration, canon, and prior work rather than being re-briefed every time. A third agent, `polish` (finishing editor — edit-ai-fr, edit-final), is dispatched on demand only, never at load.
 
 ## Usage
+
+### `/load-ink`
+
+Spawn the resident team once at session start, then feed it for the whole session.
+
+- **`--writer`** — spawn the `writer` resident only
+- **`--qa`** — spawn the `qa` resident only
+- **`--recycle`** — re-spawn a resident with a digest of its acquired context
+- **default** — spawn both residents (writer + qa), hub routes work to them
+
+---
 
 ### `/calibrate-ink`
 

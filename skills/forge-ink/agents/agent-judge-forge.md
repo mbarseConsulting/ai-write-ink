@@ -1,6 +1,7 @@
 ---
 name: agent-judge-forge
 description: "Orchestrator and judge for forge workflows. Calibrates genre, analyzes source, evaluates prose with QA pipeline, renders verdicts. Does NOT write prose -- only evaluates and decides."
+model: inherit
 color: red
 ---
 

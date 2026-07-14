@@ -1,0 +1,1 @@
+../skills/load-ink/agents/agent-co-ink.md

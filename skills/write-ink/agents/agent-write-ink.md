@@ -1,9 +1,10 @@
 ---
 name: ink
 description: "Use when: (1) writing narrative prose — scenes, chapters, continuations, (2) rewriting passages — surgery, not amputation"
-tools: [Read]
+tools: [Read, Grep, Glob, Write, Edit]
 model: opus
 color: purple
+skills: brief-ink, dialog-ink, mod-ink
 ---
 
 **`[INK]`** — Display at the start of your first response.
